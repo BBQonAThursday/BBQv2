@@ -16,14 +16,19 @@ gulp.task('css', function() {
 });
 
 
+gulp.task('js', function() {
+  return gulp.src("./src/js/**/*.js")
+    .pipe(gulp.dest('_site/js'));
+});
 
 
 
 /*
-  Watch folders for changess
+  Watch folders for changes
 */
 gulp.task("watch", function() {
   gulp.watch('./src/scss/**/*.scss', gulp.parallel('css'));
+  gulp.watch('./src/js/**/*.js', gulp.parallel('js'));
 });
 
 
@@ -31,5 +36,6 @@ gulp.task("watch", function() {
   Let's build this sucker.
 */
 gulp.task('build', gulp.parallel(
-  'css'
+  'css',
+  'js'
 ));
