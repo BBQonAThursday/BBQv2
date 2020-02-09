@@ -1,4 +1,15 @@
-<svg viewBox="0 0 0 0" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect width="0" height="0" fill="#F2F2F2"/>
-<rect id="Rectangle 1" x="-1006.16" y="-425.157" width="1920" height="1280" fill="#FEE5A5"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 13.77">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #155674;
+      }
+    </style>
+  </defs>
+  <title>underline-vector</title>
+  <g id="Layer_2" data-name="Layer 2">
+    <g id="Layer_1-2" data-name="Layer 1">
+      <polygon class="cls-1" points="10 0 20 10 20 13.77 10 3.79 0 13.77 0 10 10 0"/>
+    </g>
+  </g>
 </svg>

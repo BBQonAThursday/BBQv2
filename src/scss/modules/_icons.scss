@@ -10,7 +10,7 @@
   width: 20px;
   height: 2px;
   border-radius: 3px;
-  background: $neutral-white;
+  background: $white;
 }
 .gg-menu::after,
 .gg-menu::before {
@@ -44,15 +44,15 @@
 .gg-arrow-right-o::after {
   width: 6px;
   height: 6px;
-  border-top: 2px solid $neutral-white;
-  border-right: 2px solid $neutral-white;
+  border-top: 2px solid $white;
+  border-right: 2px solid $white;
   transform: rotate(45deg);
   bottom: 6px;
 }
 .gg-arrow-right-o::before {
   height: 2px;
   bottom: 8px;
-  background: $neutral-white;
+  background: $white;
 }
 
 .gg-arrow-left-o {
@@ -77,13 +77,13 @@
 .gg-arrow-left-o::after {
   width: 6px;
   height: 6px;
-  border-bottom: 2px solid $neutral-white;
-  border-left: 2px solid $neutral-white;
+  border-bottom: 2px solid $white;
+  border-left: 2px solid $white;
   transform: rotate(45deg);
   bottom: 6px;
 }
 .gg-arrow-left-o::before {
   height: 2px;
   bottom: 8px;
-  background: $neutral-white;
+  background: $white;
 }

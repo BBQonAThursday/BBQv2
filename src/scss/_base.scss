@@ -7,8 +7,11 @@ html {
   background-color: $background;
   display: grid;
   color: $base-text;
-  grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-areas: "spacer nav intro spacer2";
+  grid-template-columns: 2fr 3fr 2fr;
+  grid-template-rows: minmax(50rem, 90vh) max-content;
+  grid-template-areas:
+    "left-spacer nav right-spacer"
+    "intro intro intro";
   grid-gap: 2rem 4rem;
 }
 
@@ -21,6 +24,22 @@ html {
 .site--heading {
   text-align: right;
   padding-top: 4rem;
+  margin-bottom: 6rem;
+
+  .link {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url("../img/underline-vector.svg");
+      background-repeat: round;
+      height: 2rem;
+      left: 0;
+      bottom: -2rem;
+      width: 100%;
+    }
+  }
 }
 
 .nav--container {
@@ -45,10 +64,20 @@ html {
   .nav--link {
     color: $menu-color-disabled;
     text-decoration: none;
+
+    &:hover {
+      color: $menu-color-active;
+    }
   }
 }
 
 .home--intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $main-color-1;
+  color: $off-white;
   grid-area: intro;
-  padding: 2rem 4rem;
+  padding: 8rem;
+  height: 100%;
 }
