@@ -1,4 +1,3 @@
-
 .link,
 .link:visited {
   color: $base-text;
@@ -8,51 +7,52 @@
 .h1 {
   margin-bottom: 3rem;
   font-family: Saira;
-  font-size: 6.103515625em;
+  font-size: 6.103515625rem;
   line-height: 9rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0em;
+  letter-spacing: -2px;
 }
 
 .h2 {
   margin-bottom: 3rem;
   font-family: Saira;
-  font-size: 4.8828125em;
+  font-size: 4.8828125rem;
   line-height: 6rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0em;
+  letter-spacing: -2px;
 }
 
 .h3 {
   margin-bottom: 3rem;
   font-family: Saira;
-  font-size: 3.90625em;
+  font-size: 3.90625rem;
   line-height: 6rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0em;
+  letter-spacing: -2px;
 }
 
-.h4 {
+.h4,
+.nav--item {
   margin-bottom: 3rem;
   font-family: Saira;
-  font-size: 3.125em;
+  font-size: 3.125rem;
   line-height: 6rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0em;
+  letter-spacing: -2px;
 }
 
 .h5 {
   margin-bottom: 3rem;
   font-family: Saira;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   line-height: 3rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0em;
+  letter-spacing: -2px;
 }
 
 .h6 {
@@ -62,7 +62,7 @@
   line-height: 3rem;
   font-weight: 700;
   font-style: normal;
-  letter-spacing: 0em;
+  letter-spacing: -2px;
 }
 
 p,
@@ -77,46 +77,46 @@ p,
   max-width: 66ch;
 }
 
-
 @media screen and (max-width: 720px) {
-  h1 {
+  .h1 {
     margin-bottom: 3rem;
     font-family: Saira;
-    font-size: 4.8828125em;
+    font-size: 4.8828125rem;
     line-height: 6rem;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
   .h2 {
     margin-bottom: 3rem;
     font-family: Saira;
-    font-size: 3.90625em;
+    font-size: 3.90625rem;
     line-height: 6rem;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
   .h3 {
     margin-bottom: 3rem;
     font-family: Saira;
-    font-size: 3.125em;
+    font-size: 3.125rem;
     line-height: 6rem;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
-  .h4 {
+  .h4,
+  .nav--item {
     margin-bottom: 3rem;
     font-family: Saira;
     font-size: 2.5em;
     line-height: 3rem;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
   .h5 {
@@ -126,7 +126,7 @@ p,
     line-height: 3rem;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
   .h6 {
@@ -136,7 +136,7 @@ p,
     line-height: 3rem;
     font-weight: 600;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
   p,
@@ -147,7 +147,7 @@ p,
     line-height: 3rem;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: 0em;
+    letter-spacing: -2px;
   }
 
   default {
