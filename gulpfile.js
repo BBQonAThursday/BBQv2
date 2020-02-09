@@ -1,7 +1,5 @@
-const gulp    = require("gulp");
-const sass    = require("gulp-sass");
-
-
+const gulp = require("gulp");
+const sass = require("gulp-sass");
 
 /*
   generate the css with sass
