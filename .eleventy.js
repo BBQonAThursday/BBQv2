@@ -16,6 +16,7 @@ module.exports = function(eleventyConfig) {
 
 
   eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
+  eleventyConfig.addLayoutAlias("overview", "layouts/project-overview.njk");
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
