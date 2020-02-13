@@ -17,8 +17,8 @@ html {
 
 .home--nav {
   grid-area: nav;
-
   width: 100%;
+  min-width: 65rem;
 }
 
 .site--heading {

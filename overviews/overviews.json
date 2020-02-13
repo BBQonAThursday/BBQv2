@@ -1,3 +1,4 @@
 {
-  "tags": ["overview"]
+  "tags": ["overview"],
+  "layout": "layouts/project-overview.njk"
 }
