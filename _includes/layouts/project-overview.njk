@@ -1,11 +1,10 @@
-    {% for overview in overviews %}
-    <article{% if overviewClass %} class="{{ overviewClass }}"{% endif %}>
-      {{ content | safe }}
-    </article>
+    {% set overviewlist = collections.overviews %}
+    {% for overview in overviewlist %}
+   
     {% if overview.data.month ===  project.data.title %}
-    
-    
-
+       <article{% if overviewClass %} class="{{ overviewClass }}"{% endif %}>
+      {{ content | safe }}
+    </article>    
     {% endif %}
     {% endfor %}
 
