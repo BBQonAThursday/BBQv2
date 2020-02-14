@@ -13,10 +13,12 @@
   </head>
   <body>
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+      <article class="project--container">
       {{ content | safe }}
+      </article>
+      
+      {% include "project-overview.njk" %}
     </main>
-
-  
   </body>
     {% if js %} 
       <script type="text/javascript" src="../../js/{{js}}"></script>

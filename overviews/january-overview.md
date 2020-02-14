@@ -1,6 +1,8 @@
 ---
 title: January Debrief
+month: January
 date: 2020-31-01
+overviewClass: january-debrief
 ---
 
 January! The first month of the challenge. I really enjoyed exploring some new tasks that I've been meaning to wrap my head around.
