@@ -1,0 +1,138 @@
+---
+title: January
+month: january
+description: build out of January design project
+date: 2020-31-01
+js: january.js
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Sarabun:300,400,500,700,800&display=swap" rel="stylesheet">
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+</head>
+
+<body>
+  <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
+    <article class="project--container">
+
+      <section class="design-container flying january">
+        <a href="#" class="flying--logo">Flying.</a>
+        <ul class="flying--menu">
+          <li class="flying--menu-item active">Book your flight</li>
+          <li class="flying--menu-item">Check-In online</li>
+          <li class="flying--menu-item">Flight Status</li>
+        </ul>
+
+        <section class="flying--booking-form">
+          <h1 class="booking-form--heading">Where we going?</h1>
+          <form class="flight-form">
+            <ul class="booking-form--trip-types">
+              <li class="trip-type">
+                <input type="radio" class="booking" id="roundTrip" name="tripType" checked />
+                <label for="roundTrip">Round trip</label>
+              </li>
+              <li class="trip-type">
+                <input type="radio" name="tripType" id="oneWay" class="booking" />
+                <label for="oneWay">One way</label>
+              </li>
+
+              <li></li>
+              <li class="trip-type">
+                <input type="radio" name="tripType" id="multiDes" class="booking" />
+                <label for="multiDes">Multi-Destination</label>
+              </li>
+            </ul>
+            <div class="flight-location">
+              <div class="location-from">
+                <label for="from">From</label>
+                <input class="form-pill--left" type="search" name="from" />
+              </div>
+              <div class="location-to">
+                <label for="toDest">To</label>
+                <input class="form-pill--right" type="search" name="toDest" />
+              </div>
+            </div>
+            <div class="flight-dates">
+              <div class="dates-depart">
+                <label for="from">Depart</label>
+                <input class="form-pill--left" type="date" name="departDate" />
+              </div>
+
+              <div class="dates-return">
+                <label for="from">Return</label>
+                <input type="date" name="returnDate" />
+              </div>
+              <div class="travelers">
+                <label for="travelers">Travelers</label>
+                <input class="form-pill travelers--num" type="number" name="travelers" />
+              </div>
+              <div class="flight-class">
+                <label for="class">Class</label>
+                <select class="form-pill--right" type="select" name="class" />
+                <option value="economy">Economy</option>
+                <option value="premium-economy">Premium Economy</option>
+                <option value="business">Business</option>
+                <option value="First">First</option>
+                </select>
+              </div>
+            </div>
+
+            <button class="search-flights">Search Flights</button>
+          </form>
+
+        </section>
+        <article class="flying--carousel">
+
+          <div class="slides">
+            <div class="slide">
+              <h3 class="slide-heading">International destinations from $485</h3>
+              <p class="slide-sub-heading">Round trip, limited seats</p>
+            </div>
+            <div class="slide">
+              <h3 class="slide-heading">Domestic flights as low as $57</h3>
+              <p class="slide-sub-heading">Ends February 29th</p>
+            </div>
+            <div class="slide">
+              <h3 class="slide-heading">Low Fares with all the Perks</h3>
+              <p class="slide-sub-heading">$0 no change fees</p>
+            </div>
+            <div class="slide">
+              <h3 class="slide-heading">Win a trip to Australia</h3>
+              <p class="slide-sub-heading">Registration ends 3/31/2020</p>
+            </div>
+          </div>
+          </div>
+
+          <div class="slide-indicator">
+
+          </div>
+          <div class="carousel--controls">
+            <i class="gg-icon gg-arrow-left-o"></i>
+            <i class="gg-icon gg-arrow-right-o"></i>
+          </div>
+        </article>
+        <section class="scroll-bar">
+          <i class="gg-menu"></i>
+        </section>
+      </section>
+    </article>
+    <article class="overview">
+      {{ content | safe }}
+    </article>
+    </main>
+</body>
+{% if js %}
+<script type="text/javascript" src="../../js/{{js}}"></script>
+{% endif %}
+
+</html>

@@ -2,8 +2,11 @@
 title: January Debrief
 month: january
 date: 2020-31-01
+layout: layouts/january.njk
 overviewClass: january-debrief
 ---
+
+# {{ title }}
 
 January! The first month of the challenge. I really enjoyed exploring some new tasks that I've been meaning to wrap my head around.
 
@@ -18,3 +21,5 @@ I also built this on a grid. I still struggle with grid a bit. I feel like my gr
 Overall, I feel create about what I accomplished. Again, I don't want to get hung up on these projects by making them 100% functional. I plan on adding 1 or 2 pieces of functionality that I'd like to explore more of.
 
 10 out 10. best effort.
+
+[Your drunk. Go Home](/)
