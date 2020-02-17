@@ -1,31 +1,120 @@
 $february: #242635;
+$headingType: "Vidaloka", serif;
+$SansType: "Open Sans", sans-serif;
+$light-blue: #64b0ea;
 
 .february {
   background-color: $february;
   width: 100%;
   height: 100vh;
-  grid-template-columns: 4fr 2fr 2fr;
+  display: grid;
+  grid-template-columns: 1fr 4fr 2.5fr 2fr;
   grid-template-rows: repeat(4, 1fr);
-  grid-template-areas: 
-  'nav nav content'
-  'carousel image content'
-  'carousel image content'
-  'carousel image content';
+  grid-template-areas:
+    "gutter brand nav topImage"
+    "gutter carousel centerImage topImage"
+    "gutter carousel centerImage contentBar"
+    "gutter carousel centerImage contentBar";
   color: $white;
-}
+  line-height: 1.5;
+  font-family: $SansType;
 
-.february--header {
-  grid-area: nav;
-  justify-content: center;
+  .body--regular {
+    max-width: 66ch;
+    font-size: 2rem;
+    line-height: 2;
+  }
 
+  .brand {
+    grid-area: brand;
+    align-self: center;
+    justify-self: start;
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
   .nav {
+    grid-area: nav;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     &--list {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
-      justify-content: space-evenly;
+      justify-content: flex-start;
       list-style-type: none;
+      font-family: $SansType;
+      font-size: 1.6rem;
+
+      &-item {
+        padding: 4rem 4rem 4rem 0;
+
+        &:not(:first-child) {
+          padding: 4rem;
+        }
+      }
     }
+  }
+}
+
+.location--carousel {
+  grid-area: carousel;
+  align-self: center;
+
+  .slide--title {
+    font-family: $headingType;
+    font-size: 8rem;
+  }
+}
+.location--image {
+  grid-area: centerImage;
+  overflow: hidden;
+
+  .monterey {
+    background-image: url(/img/ian-schneider-WymR2nYtj5M-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100%;
+  }
+}
+.location--topRight-content {
+  grid-area: topImage;
+
+  .video--slide {
+    position: relative;
+
+    .video--thumbnail {
+      position: absolute;
+      z-index: 2;
+    }
+
+    .location--video {
+      padding: 56.25% 0 0 0;
+      position: absolute;
+      z-index: 1;
+      width: 100%;
+    }
+  }
+}
+
+.location--description {
+  grid-area: contentBar;
+  background-color: $light-blue;
+  padding: 6rem;
+
+  // page type
+  .heading {
+    font-family: $SansType;
+    font-size: 3.2rem;
+    font-weight: normal;
+    line-height: 1.5;
+    letter-spacing: -0.5px;
+    margin-bottom: 2rem;
+  }
+
+  .arrow {
+    padding-top: 6rem;
+    font-size: 4rem;
   }
 }

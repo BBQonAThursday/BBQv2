@@ -92,13 +92,13 @@
   box-sizing: border-box;
   position: relative;
   display: block;
-  transform: scale(var(--ggs,1));
+  transform: scale(var(--ggs, 1));
   width: 16px;
   height: 16px;
   border: 2px solid $white;
   border-radius: 100%;
-  margin-left: -4px;
-  margin-top: -4px
+  margin-left: 0;
+  margin-top: 0;
 }
 .gg-search::after {
   content: "";
@@ -111,5 +111,5 @@
   background: $white;
   transform: rotate(-45deg);
   top: 10px;
-  left: 12px
+  left: 12px;
 }

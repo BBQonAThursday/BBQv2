@@ -1,6 +1,6 @@
 ---
 title: January Debrief
-month: January
+month: january
 date: 2020-31-01
 overviewClass: january-debrief
 ---
