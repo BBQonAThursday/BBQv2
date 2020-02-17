@@ -22,4 +22,4 @@ Overall, I feel create about what I accomplished. Again, I don't want to get hun
 
 10 out 10. best effort.
 
-[Your drunk. Go Home](/)
+[You're drunk. Go Home](/)
