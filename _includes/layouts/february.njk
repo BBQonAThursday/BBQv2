@@ -1,0 +1,87 @@
+---
+title: February
+description: February design challenge from 9Grids travel site.
+date: 2020-29-02
+---
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Vidaloka&display=swap" rel="stylesheet">
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+</head>
+
+<body>
+  <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
+    <article class="project--container">
+      <article class="february">
+        <div class="brand">
+          9Grids.
+        </div>
+        <nav class="nav">
+          <ul class="nav--list">
+            <li class="nav--list-item">Explore</li>
+            <li class="nav--list-item">About</li>
+            <li class="nav--list-item">Contact</li>
+            <li class="nav--list-item"><i class="gg-search"></i></li>
+        </nav>
+        <section class="location--carousel">
+          <div class="monterey-slide">
+            <div class="slide--title">Visit Monterey</div>
+          </div>
+          <div class="monterey-slide">
+            <div class="slide--title">Chamonix holidays</div>
+          </div>
+          <div class="monterey-slide">
+            <div class="slide--title">Tokyo Spring</div>
+          </div>
+          <div class="monterey-slide">
+            <div class="slide--title">Icelandic Winter</div>
+          </div>
+          <div class="carousel--indictors">
+
+          </div>
+        </section>
+        <section class="location--image">
+          <div class="monterey">
+            </dvi>
+        </section>
+        <article class="location--topRight-content">
+          <div class="video--slide">
+            <img class="video--thumbnail" src="/img/ryan-sepulveda-uZMcU79AdgI-unsplash.jpg"></img>
+            <div class="location--video"><iframe
+                src="https://player.vimeo.com/video/172824819?title=0&byline=0&portrait=0"
+                style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+                allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+            <script src="https://player.vimeo.com/api/player.js"></script>
+          </div>
+
+        </article>
+        <section class="location--description">
+          <div class="monterey">
+            <h2 class="heading">Perfect Weekend</h2>
+            <p class="body--regular">If you're in need of a seaside getaway but don't want to dig up your passport,
+              consider venturing to the Pacific coast of Central California, USA.</p>
+          </div>
+          <div class="arrow">&rarr;</div>
+        </section>
+      </article>
+</article>
+      <article class="overview">
+        {{ content | safe }}
+      </article>
+      </main>
+</body>
+{% if js %}
+<script type="text/javascript" src="../../js/{{js}}"></script>
+{% endif %}
+
+</html>

@@ -1,12 +1,12 @@
 ---
-title: January Debrief
+title: January
 month: january
 date: 2020-31-01
 layout: layouts/january.njk
-overviewClass: january-debrief
+overviewClass: january
 ---
 
-# {{ title }}
+{{ title }}
 
 January! The first month of the challenge. I really enjoyed exploring some new tasks that I've been meaning to wrap my head around.
 

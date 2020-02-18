@@ -21,40 +21,36 @@ html {
 
 .home--page {
   background-color: $background;
-  display: grid;
+  display: flex;
+  flex-direction: row;
   color: $base-text;
-  grid-template-columns: 2fr 3fr 2fr;
-  grid-template-rows: minmax(50rem, 90vh) max-content;
-  grid-template-areas:
-    "left-spacer nav right-spacer"
-    "intro intro intro";
-  grid-gap: 2rem 4rem;
+  height: 100vh;
 }
 
 .home--nav {
-  grid-area: nav;
+  flex-basis: 50%;
   width: 100%;
-  min-width: 65rem;
+  padding: 0 0 0 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
 }
 
 .site--heading {
-  text-align: right;
-  padding-top: 4rem;
   margin-bottom: 6rem;
 
-  .link {
-    position: relative;
+  position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      background-image: url("../img/underline-vector.svg");
-      background-repeat: round;
-      height: 2rem;
-      left: 0;
-      bottom: -2rem;
-      width: 100%;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/underline-vector.svg");
+    background-repeat: round;
+    height: 2rem;
+    left: 0;
+    bottom: -2rem;
+    width: 100%;
   }
 }
 
@@ -78,11 +74,11 @@ html {
   }
 
   .nav--link {
-    color: $menu-color-disabled;
+    color: $main-color-1;
     text-decoration: none;
 
     &:hover {
-      color: $menu-color-active;
+      color: $c5;
     }
   }
 }
@@ -91,9 +87,17 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: $main-color-1;
   color: $off-white;
-  grid-area: intro;
+  flex-basis: 50%;
   padding: 8rem;
   height: 100%;
+
+  .home--about {
+
+    .body--regular {
+      max-width: 50ch
+    }
+  }
 }
