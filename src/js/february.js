@@ -3,6 +3,12 @@ const slides = document.querySelectorAll('.slide');
 const indicators = document.querySelector('.carousel--indicators');
 const centerImageContainer = document.querySelector('.location--image');
 const topRightImageContainer = document.querySelector('.location--topRight-content');
+let slideCount = slides.length;
+
+console.log(slideCount);
+console.log(slides[0]);
+
+slides[0].classList.add('active');
 
 // 1: create the carousel movements with sliding progress bar
   // 1.1 create a slide counter and have that display in the UI

@@ -130,9 +130,8 @@ js: january.js
       {{ content | safe }}
     </article>
     </main>
-</body>
-{% if js %}
-<script type="text/javascript" src="../../js/{{js}}"></script>
-{% endif %}
-
+    {% if js %}
+      <script type="text/javascript" src="../../js/{{js}}"></script>
+    {% endif %}
+  </body>
 </html>

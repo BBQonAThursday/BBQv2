@@ -4,7 +4,6 @@ month: february
 date: 2020-31-01
 overviewClass: february
 layout: layouts/february
-js: february.js
 ---
 
 {{title}}

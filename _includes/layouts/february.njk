@@ -2,9 +2,10 @@
 title: February
 description: February design challenge from 9Grids travel site.
 date: 2020-29-02
+js: february.js
 ---
 
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -79,9 +80,8 @@ date: 2020-29-02
         {{ content | safe }}
       </article>
       </main>
-</body>
-{% if js %}
-<script type="text/javascript" src="../../js/{{js}}"></script>
-{% endif %}
-
+  </body>
+  {% if js %}
+  <script type="text/javascript" src="../../js/{{js}}"></script>
+      {% endif %}
 </html>
