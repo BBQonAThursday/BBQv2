@@ -78,6 +78,23 @@ $light-blue: #64b0ea;
   }
 }
 
+.carousel--indicators {
+
+
+  .indicator--track {
+    width: 20rem;
+    height: .5rem;
+    background-color: rgba($off-white, 50%);
+
+    .active--indicator {
+      background-color: $light-blue;
+      width: 5rem;
+      height: 100%;
+      transition: width .5s ease-in-out;
+    }
+  }
+}
+
 .location--image {
   grid-area: centerImage;
   overflow: hidden;

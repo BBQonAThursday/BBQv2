@@ -1,6 +1,6 @@
 const carousel = document.querySelector('.location--carousel');
 const slides = document.querySelectorAll('.slide');
-const indicators = document.querySelector('.carousel--indicators');
+const activeIndicator = document.querySelector('.active--indicator');
 const centerImageContainer = document.querySelector('.location--image');
 const topRightImageContainer = document.querySelector('.location--topRight-content');
 let slideCount = slides.length;
