@@ -1,14 +1,63 @@
 const carousel = document.querySelector('.location--carousel');
 const slides = document.querySelectorAll('.slide');
 const activeIndicator = document.querySelector('.active--indicator');
+const rightArrow = document.querySelector('.gg-arrow-right-o');
 const centerImageContainer = document.querySelector('.location--image');
 const topRightImageContainer = document.querySelector('.location--topRight-content');
 let slideCount = slides.length;
+let indicatorTrack = document.querySelector('.indicator--track').clientWidth;
+let slideIndex = 0;
 
-console.log(slideCount);
-console.log(slides[0]);
+slides[0].classList.toggle('active');
 
-slides[0].classList.add('active');
+
+let currentIndicatorWidth = activeIndicator.clientWidth;
+let currentActiveNumber = checkActiveSlide();
+let slideIncrement =  1 / slideCount;
+
+// console.log(slideCount);
+// console.log(slides[0]);
+
+rightArrow.addEventListener('click', advanceSlider);
+
+
+function checkActiveSlide() {
+  for(i = 0; i <= slideCount; i++) {
+    if(slides[i].classList.contains('active')) {
+     // console.log("active slide is " + i);
+      return i;
+    }
+  }
+}
+
+
+console.log(currentActiveNumber);
+
+function toggleActive() {
+  slides[currentActiveNumber].classList.toggle('active');
+  if(currentActiveNumber === (slideCount - 1)){
+    slides[0].classList.toggle('active');
+    currentActiveNumber = checkActiveSlide();
+  } else {
+    slides[currentActiveNumber + 1 ].classList.toggle('active');
+    currentActiveNumber++;
+  }
+  console.log(currentActiveNumber);
+}
+
+
+
+function advanceSlider() {
+  toggleActive();
+  
+  activeIndicator.style.width = `${currentIndicatorWidth + (slideIncrement*100)}px`;
+  console.log(currentIndicatorWidth);
+  currentIndicatorWidth = currentIndicatorWidth + activeIndicator.clientWidth;
+  
+
+}
+
+
 
 // 1: create the carousel movements with sliding progress bar
   // 1.1 create a slide counter and have that display in the UI
