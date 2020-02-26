@@ -2,15 +2,13 @@ const carousel = document.querySelector('.location--carousel');
 const slides = document.querySelectorAll('.slide');
 const activeIndicator = document.querySelector('.active--indicator');
 const rightArrow = document.querySelector('.gg-arrow-right-o');
+const leftArrow = document.querySelector('.gg-arrow-left-o');
 const centerImageContainer = document.querySelector('.location--image');
 const topRightImageContainer = document.querySelector('.location--topRight-content');
 let slideCount = slides.length;
 let indicatorTrack = document.querySelector('.indicator--track').clientWidth;
 let slideIndex = 0;
-
 slides[0].classList.toggle('active');
-
-
 let currentIndicatorWidth = activeIndicator.clientWidth;
 let currentActiveNumber = checkActiveSlide();
 let slideIncrement =  1 / slideCount;
@@ -19,6 +17,7 @@ let slideIncrement =  1 / slideCount;
 // console.log(slides[0]);
 
 rightArrow.addEventListener('click', advanceSlider);
+leftArrow.addEventListener('click', reverseSlider);
 
 
 function checkActiveSlide() {
@@ -50,11 +49,26 @@ function toggleActive() {
 function advanceSlider() {
   toggleActive();
   
-  activeIndicator.style.width = `${currentIndicatorWidth + (slideIncrement*100)}px`;
   console.log(currentIndicatorWidth);
-  currentIndicatorWidth = currentIndicatorWidth + activeIndicator.clientWidth;
-  
+  if(currentIndicatorWidth === indicatorTrack){
+    currentIndicatorWidth = 0;
+    activeIndicator.style.width = 0;
+  } else {
+    activeIndicator.style.width = `${currentIndicatorWidth + ((slideIncrement*100)*2)}px`;
+    currentIndicatorWidth = currentIndicatorWidth + activeIndicator.clientWidth;
+  }
+}
 
+function reverseSlider() {
+  toggleActive();
+  console.log(currentIndicatorWidth);
+  if(currentIndicatorWidth === 0){
+    currentIndicatorWidth = indicatorTrack;
+    activeIndicator.style.width = '100%';
+  } else {
+  currentIndicatorWidth = currentIndicatorWidth - activeIndicator.clientWidth;
+  activeIndicator.style.width = `${currentIndicatorWidth - ((slideIncrement*100)*2)}px`;
+  }
 }
 
 

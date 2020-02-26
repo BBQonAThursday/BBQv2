@@ -1,6 +1,8 @@
 $february: #242635;
-$headingType: "Vidaloka", serif;
-$SansType: "Open Sans", sans-serif;
+$headingType: "Vidaloka",
+serif;
+$SansType: "Open Sans",
+sans-serif;
 $light-blue: #64b0ea;
 
 .february {
@@ -32,6 +34,7 @@ $light-blue: #64b0ea;
     font-size: 2.4rem;
     font-weight: 600;
   }
+
   .nav {
     grid-area: nav;
     display: flex;
@@ -65,7 +68,11 @@ $light-blue: #64b0ea;
 
   .slide {
     display: none;
-    transition: all .2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    @media screen and (min-width: 76.8rem) {
+      width: 50rem;
+    }
 
     &.active {
       display: block;
@@ -79,18 +86,16 @@ $light-blue: #64b0ea;
 }
 
 .carousel--indicators {
-
-
   .indicator--track {
     width: 20rem;
-    height: .5rem;
+    height: 0.5rem;
     background-color: rgba($off-white, 50%);
 
     .active--indicator {
       background-color: $light-blue;
       width: 5rem;
       height: 100%;
-      transition: width .5s ease-in-out;
+      transition: width 0.5s ease-in-out;
     }
   }
 }
@@ -106,11 +111,15 @@ $light-blue: #64b0ea;
     height: 100%;
   }
 }
+
 .location--topRight-content {
   grid-area: topImage;
 
   .video--slide {
     position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 
     .video--thumbnail {
       position: absolute;
