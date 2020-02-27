@@ -5,13 +5,18 @@ const rightArrow = document.querySelector('.gg-arrow-right-o');
 const leftArrow = document.querySelector('.gg-arrow-left-o');
 const centerImageContainer = document.querySelector('.location--image');
 const topRightImageContainer = document.querySelector('.location--topRight-content');
-let slideCount = slides.length;
-let indicatorTrack = document.querySelector('.indicator--track').clientWidth;
+let indicatorTrack = document.querySelector('.indicator--track');
 let slideIndex = 0;
+let reloop = false;
+let numSlides = slides.length;
+let activeSlide = 1;
+let slideRatio = 200 / numSlides;
 slides[0].classList.toggle('active');
 let currentIndicatorWidth = activeIndicator.clientWidth;
 let currentActiveNumber = checkActiveSlide();
-let slideIncrement =  1 / slideCount;
+let slideIncrement =  1 / numSlides;
+
+
 
 // console.log(slideCount);
 // console.log(slides[0]);
@@ -21,10 +26,11 @@ leftArrow.addEventListener('click', reverseSlider);
 
 
 function checkActiveSlide() {
-  for(i = 0; i <= slideCount; i++) {
+  for(i = 0; i <= numSlides; i++) {
     if(slides[i].classList.contains('active')) {
      // console.log("active slide is " + i);
-      return i;
+     console.log("active slide is " + i); 
+     return i;
     }
   }
 }
@@ -32,14 +38,24 @@ function checkActiveSlide() {
 
 console.log(currentActiveNumber);
 
-function toggleActive() {
+function toggleActive(direction) {
   slides[currentActiveNumber].classList.toggle('active');
-  if(currentActiveNumber === (slideCount - 1)){
-    slides[0].classList.toggle('active');
-    currentActiveNumber = checkActiveSlide();
-  } else {
-    slides[currentActiveNumber + 1 ].classList.toggle('active');
-    currentActiveNumber++;
+  if(direction === 'forward') {
+    if(currentActiveNumber === (numSlides - 1)){
+      slides[0].classList.toggle('active');
+      currentActiveNumber = checkActiveSlide();
+    } else {
+      slides[currentActiveNumber + 1].classList.toggle('active');
+      currentActiveNumber++;
+    }
+  } else if (direction === 'backward') {
+    if(currentActiveNumber === 0){
+      slides[numSlides - 1].classList.toggle('active');
+      currentActiveNumber = checkActiveSlide();
+    } else {
+      slides[currentActiveNumber - 1].classList.toggle('active');
+      currentActiveNumber--;
+    }
   }
   console.log(currentActiveNumber);
 }
@@ -47,28 +63,31 @@ function toggleActive() {
 
 
 function advanceSlider() {
-  toggleActive();
-  
-  console.log(currentIndicatorWidth);
-  if(currentIndicatorWidth === indicatorTrack){
-    currentIndicatorWidth = 0;
-    activeIndicator.style.width = 0;
-  } else {
-    activeIndicator.style.width = `${currentIndicatorWidth + ((slideIncrement*100)*2)}px`;
-    currentIndicatorWidth = currentIndicatorWidth + activeIndicator.clientWidth;
+   toggleActive('forward');
+  if(activeSlide < numSlides) {
+    activeSlide++;
+    activeIndicator.style.width = `${(activeSlide * slideRatio)}px`;
+    //console.log("right click: " + ((activeSlide * slideRatio) - slideRatio));
+  } else if (activeSlide === numSlides) {
+    activeSlide = 1;
+    activeIndicator.style.width = `${(activeSlide * slideRatio)}px`;
+    //console.log("right click: " + ((activeSlide * slideRatio) - slideRatio));
   }
 }
 
 function reverseSlider() {
-  toggleActive();
-  console.log(currentIndicatorWidth);
-  if(currentIndicatorWidth === 0){
-    currentIndicatorWidth = indicatorTrack;
-    activeIndicator.style.width = '100%';
-  } else {
-  currentIndicatorWidth = currentIndicatorWidth - activeIndicator.clientWidth;
-  activeIndicator.style.width = `${currentIndicatorWidth - ((slideIncrement*100)*2)}px`;
+  toggleActive('backward');
+  if(activeSlide > 1) {
+    activeSlide--;
+    activeIndicator.style.width = `${(activeSlide * slideRatio)}px`;
+    //console.log("right click: " + ((activeSlide * slideRatio) - slideRatio));
+  } else if (activeSlide === 1) {
+    activeSlide = numSlides;
+    activeIndicator.style.width = `${(activeSlide * slideRatio)}px`;
+    //console.log("right click: " + ((activeSlide * slideRatio) - slideRatio));
   }
+  // console.log('active slide is: ' + activeSlide);
+  // console.log('activeIndicator width is: ' + activeIndicator.clientWidth)
 }
 
 
