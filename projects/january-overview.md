@@ -6,7 +6,7 @@ layout: layouts/january.njk
 overviewClass: january
 ---
 
-{{ title }}
+<h1 class="h1">{{title}}</h1>
 
 January! The first month of the challenge. I really enjoyed exploring some new tasks that I've been meaning to wrap my head around.
 

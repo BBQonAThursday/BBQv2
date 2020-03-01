@@ -3,7 +3,36 @@ $headingType: "Vidaloka",
 serif;
 $SansType: "Open Sans",
 sans-serif;
-$light-blue: #64b0ea;
+$monterey: #64b0ea;
+$lisbon: #e0e2db;
+$japan:#84a98c;
+$auckland:#9a94bc;
+$amsterdam: #896978;
+$black90: #00000090;
+
+.monterey {
+  background-color: $monterey;
+}
+
+
+.lisbon {
+  background-color: $lisbon;
+  color: $black90;
+}
+
+.japan {
+  background-color: $japan;
+}
+
+.auckland {
+  background-color: $auckland;
+}
+
+.amsterdam {
+  background-color: $amsterdam;
+}
+
+
 
 .february {
   background-color: $february;
@@ -13,8 +42,8 @@ $light-blue: #64b0ea;
   grid-template-columns: 1fr 3fr 2fr 2fr;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
-    "gutter brand nav topImage"
-    "gutter carousel centerImage topImage"
+    "gutter brand nav contentBar"
+    "gutter carousel centerImage contentBar"
     "gutter carousel centerImage contentBar"
     "gutter carousel centerImage contentBar";
   color: $white;
@@ -67,15 +96,31 @@ $light-blue: #64b0ea;
   width: 100%;
 
   .slide {
+    visibility: hidden;
     display: none;
-    transition: all 0.2s ease-in-out;
-
-    @media screen and (min-width: 76.8rem) {
-      width: 50rem;
-    }
+    opacity: 0;
 
     &.active {
-      display: block;
+      visibility: visible;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      animation: fadeIn 1.1s;
+      opacity: 1;
+    }
+
+    @media screen and (min-width: 76.8rem) {
+      height: 50rem;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
     }
   }
 
@@ -90,9 +135,10 @@ $light-blue: #64b0ea;
     width: 20rem;
     height: 0.5rem;
     background-color: rgba($off-white, 50%);
+    margin-bottom: 2rem;
 
     .active--indicator {
-      background-color: $light-blue;
+      background-color: $monterey;
       width: 5rem;
       height: 100%;
       transition: width 0.5s ease-in-out;
@@ -104,41 +150,42 @@ $light-blue: #64b0ea;
   grid-area: centerImage;
   overflow: hidden;
 
-  .monterey {
-    background-image: url(/img/ian-schneider-WymR2nYtj5M-unsplash.jpg);
-    background-position: center center;
-    background-size: cover;
-    height: 100%;
-  }
-}
-
-.location--topRight-content {
-  grid-area: topImage;
-
-  .video--slide {
-    position: relative;
-    height: 100%;
+  .slide--image {
     width: 100%;
-    overflow: hidden;
+    height: 100%;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
 
-    .video--thumbnail {
-      position: absolute;
-      z-index: 2;
-    }
-
-    .location--video {
-      padding: 56.25% 0 0 0;
-      position: absolute;
-      z-index: 1;
-      width: 100%;
+    &.active {
+      visibility: visible;
+      display: block;
+      animation: fadeIn 1.5s;
+      opacity: 1;
     }
   }
 }
 
 .location--description {
   grid-area: contentBar;
-  background-color: $light-blue;
-  padding: 6rem;
+
+  .location--content {
+    padding: 6rem;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+
+    &.active {
+      visibility: visible;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      animation: fadeIn .2s;
+      opacity: 1;
+    }
+  }
 
   // page type
   .heading {

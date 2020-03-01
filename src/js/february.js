@@ -1,5 +1,7 @@
 const carousel = document.querySelector('.location--carousel');
 const slides = document.querySelectorAll('.slide');
+const slideImages = document.querySelectorAll('.slide--image');
+const locationDesc = document.querySelectorAll('.location--content');
 const activeIndicator = document.querySelector('.active--indicator');
 const rightArrow = document.querySelector('.gg-arrow-right-o');
 const leftArrow = document.querySelector('.gg-arrow-left-o');
@@ -40,20 +42,31 @@ console.log(currentActiveNumber);
 
 function toggleActive(direction) {
   slides[currentActiveNumber].classList.toggle('active');
+  slideImages[currentActiveNumber].classList.toggle('active');
+  locationDesc[currentActiveNumber].classList.toggle('active');
+
   if(direction === 'forward') {
     if(currentActiveNumber === (numSlides - 1)){
       slides[0].classList.toggle('active');
+      slideImages[0].classList.toggle('active');
+      locationDesc[0].classList.toggle('active');
       currentActiveNumber = checkActiveSlide();
     } else {
       slides[currentActiveNumber + 1].classList.toggle('active');
+      slideImages[currentActiveNumber + 1].classList.toggle('active');
+      locationDesc[currentActiveNumber + 1].classList.toggle('active');
       currentActiveNumber++;
     }
   } else if (direction === 'backward') {
     if(currentActiveNumber === 0){
       slides[numSlides - 1].classList.toggle('active');
+      slideImages[numSlides - 1].classList.toggle('active');
+      locationDesc[numSlides - 1].classList.toggle('active');
       currentActiveNumber = checkActiveSlide();
     } else {
       slides[currentActiveNumber - 1].classList.toggle('active');
+      slideImages[currentActiveNumber - 1].classList.toggle('active');
+      locationDesc[currentActiveNumber - 1].classList.toggle('active');
       currentActiveNumber--;
     }
   }
