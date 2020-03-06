@@ -24,14 +24,58 @@ js: march.js
   <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
     <section class="project--container">
       <article class="march">
+
+        <a class="brand" href="#">
+          <div class="brand--heading">Into</div>
+          <div class="brand--subheading">Architecture</div>
+        </a>
+        <ul class="nav">
+          <li class="nav--item"><a href="#" class="nav--item-link">News</a></li>
+          <li class="nav--item"><a href="#" class="nav--item-link">Projects</a></li>
+          <li class="nav--item"><a href="#" class="nav--item-link">About</a></li>
+          <li class="nav--item"><a href="#" class="nav--item-link">People</a></li>
+          <li class="nav--item"><a href="#" class="nav--item-link">Contact</a></li>
+        </ul>
+        <article class="carousel">
+          <div class="slide">
+            <img class="slide--img" src="">
+            <div class="slide--heading">Lego House</div>
+          </div>
+        </article>
+        <article class="welcome-in">
+          <p class="lede"> Ultrices dui sapien eget mi proin sed libero enim. Lacinia at quis risus sed.</p>
+          <p>Ornare arcu dui vivamus arcu felis bibendum ut tristique. In ante metus dictum at tempor. Nec ultrices dui
+            sapien eget mi proin sed libero. Quis viverra nibh cras pulvinar mattis nunc sed. In iaculis nunc sed augue
+            lacus viverra vitae. Bibendum ut tristique et egestas quis. Sed risus ultricies tristique nulla aliquet enim
+            tortor at. Diam quam nulla porttitor massa id. Curabitur gravida arcu ac tortor dignissim convallis aenean
+            et tortor.</p>
+          <p>Faucibus vitae aliquet nec ullamcorper. Quis risus sed vulputate odio ut enim blandit volutpat. Scelerisque
+            in dictum non consectetur a erat nam at lectus. Ultrices neque ornare aenean euismod elementum nisi quis. In
+            ante metus dictum at tempor commodo ullamcorper a lacus. Libero volutpat sed cras ornare arcu dui vivamus
+            arcu felis. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec.</p>
+
+          <p class="border-accent">Mies Van Der Rohe Awarrd</p>
+        </article>
+        <article class="recent-news">
+          <div class="featured-article article"></div>
+          <div class="article"></div>
+          <div class="article"></div>
+        </article>
+        <article class="competitions">
+
+        </article>
+        <article class="footer">
+
+        </article>
       </article>
     </section>
     <article class="overview">
       {{ content | safe }}
     </article>
-  </main>
+    </main>
 </body>
-  {% if js %}
-  <script type="text/javascript" src="../../js/{{js}}"></script>
-      {% endif %}
+{% if js %}
+<script type="text/javascript" src="../../js/{{js}}"></script>
+{% endif %}
+
 </html>

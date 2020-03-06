@@ -1,0 +1,17 @@
+$background: #fff;
+$highlight-section: #e6e6e6;
+$black: #1e1e1e;
+
+.march {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+
+  .welcome-in {
+    background-color: $highlight-section;
+    grid-column-start: span 12;
+  }
+
+  .recent-news {
+    grid-column-start: span 12;
+  }
+}
