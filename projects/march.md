@@ -5,5 +5,7 @@ date: 2020-31-03
 layout: layouts/march
 ---
 
+<h1 class="h1">{{title}}</h1>
+
 [Link to project](https://www.behance.net/gallery/33985094/INTO-architecture-office)
 [Photo by Lance Anderson on Unsplash](https://unsplash.com/photos/QdAAasrZhdk)
