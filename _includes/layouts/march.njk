@@ -16,7 +16,9 @@ js: march.js
   <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
 
-   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700;900&family=Roboto:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 </head>
 
@@ -24,27 +26,29 @@ js: march.js
   <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
     <section class="project--container">
       <article class="march">
-
-        <a class="brand" href="#">
-          <div class="brand--heading">Into</div>
-          <div class="brand--subheading">Architecture</div>
-        </a>
-        <ul class="navlist">
-          <li class="navlist--item"><a href="#" class="navlist--item-link">News</a></li>
-          <li class="navlist--item"><a href="#" class="navlist--item-link">Projects</a></li>
-          <li class="navlist--item"><a href="#" class="navlist--item-link">About</a></li>
-          <li class="navlist--item"><a href="#" class="navlist--item-link">People</a></li>
-          <li class="navlist--item"><a href="#" class="navlist--item-link">Contact</a></li>
-        </ul>
-        <article class="carousel">
-          <div class="slide">
-            <img class="slide--img" src="/img/march/dan-freeman-m4-wkz4GV04-unsplash.jpg">
-            <div class="slide--heading">Lego House</div>
-          </div>
-        </article>
+        <section class="topbar">
+          <a class="brand" href="#">
+            <div class="brand--heading">Into</div>
+            <div class="brand--subheading">Architecture</div>
+          </a>
+          <ul class="navlist">
+            <li class="navlist--item active"><a href="#" class="navlist--item-link">News</a></li>
+            <li class="navlist--item"><a href="#" class="navlist--item-link">Projects</a></li>
+            <li class="navlist--item"><a href="#" class="navlist--item-link">About</a></li>
+            <li class="navlist--item"><a href="#" class="navlist--item-link">People</a></li>
+            <li class="navlist--item"><a href="#" class="navlist--item-link">Contact</a></li>
+          </ul>
+        </section>
         <article class="welcome-in">
+          <article class="carousel">
+            <div class="slide">
+              <img class="slide--img" src="/img/march/dan-freeman-m4-wkz4GV04-unsplash.jpg">
+              <div class="slide--heading">Lego House</div>
+            </div>
+          </article>
           <div class="welcome-in--content-container">
-            <p class="lede body--regular"> Ultrices dui sapien eget mi proin sed libero enim. Lacinia at quis risus sed. Quis risus sed vulputate odio ut enim
+            <p class="lede body--regular"> Ultrices dui sapien eget mi proin sed libero enim. Quis risus sed vulputate
+              odio ut enim
               blandit volutpat.
             </p>
             <p class="body--regular">Ornare arcu dui vivamus arcu felis bibendum ut tristique. In ante metus dictum at
@@ -62,11 +66,63 @@ js: march.js
           </div>
         </article>
         <article class="recent-news">
-          <div class="featured-article article"></div>
-          <div class="article"></div>
-          <div class="article"></div>
+          <div class="articles">
+          <div class="featured-article article">
+            <div class="article--data">
+              <p class="article--date">03/05/2020</p>
+              <div class="article--title">Quarters Renovation</div>
+            </div>
+            <div class="article--preview">
+              <p class="body--regular inverse-color">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam
+                aliquam sem. Nullam eget felis eget nunc lobortis mattis aliquam. Sit amet mauris commodo quis.
+                Adipiscing tristique risus nec feugiat in.</p>
+              <button class="btn inverse-btn"><a href="#">More</a></button>
+            </div>
+            <img class="article--image" src="/img\march/joel-filipe-RFDP7_80v5A-unsplash.jpg">
+          </div>
+          <div class="article">
+            <div class="article--data">
+              <p class="article--date">02/20/2020</p>
+              <div class="article--title">Sagittis nisl rhoncus mattis rhoncus urna</div>
+            </div>
+            <div class="article--preview">
+              <p class="body--regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Condimentum id venenatis a condimentum vitae sapien. Sed
+                vulputate mi sit amet mauris commodo.</p>
+              <p class="body--regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Augue mauris augue neque gravida.</p>
+              <button class="btn"><a href="#">More</a></button>
+            </div>
+          </div>
+          <div class="article">
+            <div class="article--data">
+              <p class="article--date">1/31/2020</p>
+              <div class="article--title">Egestas pretium aenean pharetra magna</div>
+            </div>
+            <div class="article--preview">
+              <p class="body--regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae suscipit tellus mauris a
+                diam. Mauris nunc congue nisi vitae suscipit tellus. Sed faucibus turpis in eu mi bibendum neque
+                egestas. At augue eget arcu dictum varius duis at consectetur.</p>
+              <button class="btn"><a href="#">More</a></button>
+            </div>
+          </div>
+        </div>
         </article>
         <article class="competitions">
+          <div class="competition--details">
+            <p class="article--date">1/31/2020</p>
+            <p class="body--regular">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Mauris nunc congue nisi vitae suscipit tellus mauris a
+              diam. Mauris nunc congue nisi vitae suscipit tellus. Sed faucibus turpis in eu mi bibendum neque
+              egestas. At augue eget arcu dictum varius duis at consectetur.</p>
+            <button class="btn"><a href="#">More</a></button>
+          </div>
+          <div class="competition--placement">
+            <p class="border-accent body--regular">1st Place</p>
+            <img class="competition--submission" src="/img/march/joel-filipe-g8OgQYKT9e4-unsplash.jpg">
+          </div>
 
         </article>
         <article class="footer">
