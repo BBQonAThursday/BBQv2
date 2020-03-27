@@ -188,6 +188,7 @@ $black: #1e1e1e;
     background: $highlight-section-inverse;
     width: 100vw;
     margin-left: calc(50% - 50vw);
+    padding-bottom: 15rem;
 
     .articles {
       display: flex;
@@ -271,6 +272,9 @@ $black: #1e1e1e;
   .competitions {
     display: flex;
     flex-direction: row;
+    margin-top: 15rem;
+    background-color: $gray;
+    padding: 2rem;
 
     .competition--details {
       flex-basis: 50%;
@@ -278,6 +282,18 @@ $black: #1e1e1e;
 
     .competition--placement {
       flex-basis: 50%;
+      position: relative;
+      margin-top: -4rem;
+
+      .body--regular {
+        z-index: 1;
+        top: -25%;
+        right: 0;
+        position: absolute;
+      }
+
+      &--submission {
+      }
     }
   }
 }
