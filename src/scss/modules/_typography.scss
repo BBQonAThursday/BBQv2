@@ -147,7 +147,12 @@ p,
     line-height: 1.5;
     font-weight: 400;
     font-style: normal;
-    letter-spacing: -2px;
+    letter-spacing: 0;
+
+    @include breakpoint(md) {
+      letter-spacing: -2px;
+    }
+    
   }
 
   default {

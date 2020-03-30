@@ -98,6 +98,7 @@ $horizontal-gradient: linear-gradient(
   .topbar {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-content: flex-end;
     margin-bottom: 8rem;
@@ -105,10 +106,15 @@ $horizontal-gradient: linear-gradient(
 
   .brand {
     text-transform: uppercase;
-    margin-top: 4rem;
+    margin: 4rem auto 0;
+    padding: 1rem;
     font-family: "Raleway", sans-serif;
     color: $black;
     text-decoration: none;
+
+    @include breakpoint(md) {
+      padding: 0;
+    }
 
     .brand--heading {
       font-size: 7.2rem;
@@ -130,12 +136,24 @@ $horizontal-gradient: linear-gradient(
     justify-content: space-between;
     font-family: "Raleway", sans-serif;
     text-transform: uppercase;
+    margin: 1rem auto 0 auto;
+
+    @include breakpoint(md) {
+      margin-top: 0;
+    }
+
 
     &--item {
       font-weight: 700;
-      font-size: 1.6rem;
-      margin-left: 1.5rem;
-      margin-right: 1.5rem;
+      font-size: 1.4rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+      @include breakpoint(md) {
+        font-size: 1.4rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
 
       &:first-child {
         margin-left: 0;
@@ -163,12 +181,17 @@ $horizontal-gradient: linear-gradient(
   }
 
   .carousel {
-    max-height: 50rem;
+    max-height: 28rem;
     max-width: 120rem;
     margin-left: auto;
     margin-right: auto;
 
+    @include breakpoint(sm) {
+      max-height: 50rem;
+    }
+
     @include breakpoint(md) {
+      max-height: 50rem;
     }
 
     .slide {
@@ -209,21 +232,29 @@ $horizontal-gradient: linear-gradient(
     margin-left: calc(50% - 50vw);
 
     &--content-container {
-      padding: 8rem 0;
+      padding: 8rem 2rem;
       max-width: 120rem;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      display: flex;
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+
+      @include breakpoint(sm) {
+        grid-template-columns: repeat(4, 1fr);
+      }
+      
       justify-content: space-between;
-      flex-wrap: wrap;
+
+      @include breakpoint(md) {
+        padding: 8rem 0;
+      }
 
       .body--regular {
         padding: 0 1.5rem;
 
         @include breakpoint(md) {
-          max-width: 25%;
+          // max-width: 25%;
         }
       }
     }
