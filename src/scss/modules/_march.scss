@@ -1,21 +1,15 @@
 $background: #fff;
 $gray: #e6e6e6;
-$highlight-section: linear-gradient(
-  180deg,
+$highlight-section: linear-gradient(180deg,
   rgba(255, 255, 255, 0) 25%,
-  #e6e6e6 25%
-);
-$highlight-section-inverse: linear-gradient(
-  180deg,
+  #e6e6e6 25%);
+$highlight-section-inverse: linear-gradient(180deg,
   #e6e6e6 25%,
-  rgba(255, 255, 255, 0) 25%
-);
+  rgba(255, 255, 255, 0) 25%);
 $black: #1e1e1e;
-$horizontal-gradient: linear-gradient(
-  90deg,
+$horizontal-gradient: linear-gradient(90deg,
   #e6e6e6 75%,
-  rgba(255, 255, 255, 0) 75%
-);
+  rgba(255, 255, 255, 0) 75%);
 
 // Display Heading: font-family: 'Raleway', sans-serif;
 // Body copy:       font-family: 'Roboto', sans-serif;
@@ -52,6 +46,7 @@ $horizontal-gradient: linear-gradient(
       color: $background;
       text-decoration: none;
     }
+
     &:hover {
       background: none;
 
@@ -243,7 +238,7 @@ $horizontal-gradient: linear-gradient(
       @include breakpoint(sm) {
         grid-template-columns: repeat(4, 1fr);
       }
-      
+
       justify-content: space-between;
 
       @include breakpoint(md) {
@@ -268,18 +263,36 @@ $horizontal-gradient: linear-gradient(
 
     .articles {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       align-items: flex-end;
+      flex-direction: row;
+      flex-wrap: wrap;
       max-width: 120rem;
       width: 100%;
       margin-left: auto;
       margin-right: auto;
+      justify-content: center;
+
+      @include breakpoint(md) {
+        flex-wrap: nowrap;
+      }
     }
+
     .article {
-      flex-basis: 25%;
-      margin: 2rem;
+      flex-basis: 90%;
       border-top: 0.5rem solid $black;
       padding-top: 4rem;
+      margin: 2rem;
+
+      @include breakpoint(sm) {
+        flex-basis: 42%;
+      }
+
+      @include breakpoint(md) {
+        flex-basis: 25%;
+        margin: 2rem;
+
+      }
 
       .article--title {
         font-family: "Roboto", sans-serif;
@@ -294,20 +307,28 @@ $horizontal-gradient: linear-gradient(
         font-weight: 700;
       }
 
-      .article--preview {
-      }
+      .article--preview {}
     }
 
     .featured-article {
-      flex-basis: 50%;
+      flex-basis: 100%;
       border-top: 0;
       position: relative;
       align-self: flex-start;
       display: flex;
       flex-direction: column;
-      height: 75rem;
+      height: 50rem;
       overflow: hidden;
       justify-content: space-between;
+
+      @include breakpoint(sm) {
+        height: 60rem;
+      }
+
+      @include breakpoint(md) {
+        flex-basis: 50%;
+        height: 75rem;
+      }
 
       * {
         z-index: 1;
@@ -362,10 +383,19 @@ $horizontal-gradient: linear-gradient(
       flex-direction: row;
       background-color: $gray;
       padding: 2rem;
+      flex-wrap: wrap;
     }
 
     .competition--details {
-      flex-basis: 50%;
+      flex-basis: 100%;
+      padding-left: 2rem;
+      order: 1;
+      margin-top: 4rem;
+
+      @include breakpoint(sm) {
+        flex-basis: 50%;
+        margin-top: 0;
+      }
 
       @include breakpoint(md) {
         padding-right: 8rem;
@@ -373,10 +403,16 @@ $horizontal-gradient: linear-gradient(
     }
 
     .competition--placement {
-      flex-basis: 50%;
+      flex-basis: 100%;
       position: relative;
       margin-top: -4rem;
       font-size: 4rem;
+      order: 0;
+
+      @include breakpoint(sm) {
+        flex-basis: 50%;
+        order: 2;
+      }
 
       .body--regular {
         z-index: 1;
@@ -390,15 +426,23 @@ $horizontal-gradient: linear-gradient(
         font-size: 5rem;
       }
 
-      &--submission {
-      }
+      &--submission {}
     }
   }
 
   .footer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 10rem;
+
+    .office {
+      flex-basis: 50%;
+
+      @include breakpoint(sm) {
+        flex-basis: 33%;
+      }
+    }
 
     .office,
     .site-links {
