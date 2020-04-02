@@ -1,6 +1,6 @@
 ---
 title: March
-description: This is a post on My Blog about agile frameworks.
+description: Exploration of HTML markup and layout with flexbox and grid
 date: 2020-31-03
 layout: layouts/march
 ---
