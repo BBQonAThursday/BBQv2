@@ -19,3 +19,10 @@ Aside from type, I want to develop some visual elements that can be unique accen
 Reference Frank Chimero public redesign for inspiration and research scss/ css naming conventions. I think it would be worth developing a best practice for structuring and naming style sheets and modules.
 
 This feels brief but I'm tired. More to come soon.
+
+## Minor Pivot
+#### April 5th update
+
+I'm going to build out styles for the knuckleheads site and brand. I'm also going to use this as my demo page for the home page rework.
+
+(implicit grid column sizing)[https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/]

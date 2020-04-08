@@ -1,0 +1,154 @@
+.full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+}
+
+.text-center {
+    text-align:center;
+}
+.element-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-banner-container {
+    padding: 7rem 0;
+    background-color: #222;
+    margin-bottom: 4rem;
+}
+
+.site-banner {
+    max-width: 120rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.5;
+}
+
+.site-banner .heading--large,
+.locations li,
+.lede,
+.phone-number,
+.locations li .phone-number,
+.details {
+    color: #fff;
+}
+
+.site-banner .heading--large {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.site-banner .lede {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    max-width: 66ch;
+}
+
+.locations {
+    font-size: 1.8rem;
+}
+
+.locations li {
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.locations li .phone-number {
+    text-decoration: underline;
+}
+
+.body--regular {
+    margin-bottom: 1.5rem;
+    font-size: 1.6em;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0em;
+    max-width: 66ch;
+}
+
+
+
+
+
+/* Collections*/
+
+.collections {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+    
+    .collection {
+       
+
+        .collection-name {
+            font-size: 2.4rem;
+            margin-bottom: .75rem;
+        }
+    }
+
+    .products {
+        
+
+        .product {
+
+        }
+    }
+}
+
+
+/* Inline #3 | http://localhost:8080/projects/april/ */
+
+.product--brand {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .collection {
+    padding: 1rem;
+  }
+  
+  .product--brand {
+   
+    font-size: 16px;
+  }
+  
+  .product-variants {
+    padding-left: 1rem !important;
+    list-style-type: disc !important;
+  }
+  
+  .product {
+    margin-bottom: 2rem;
+  }
+  
+  .product-variants {
+    /* padding-left: 1rem !important; */
+    padding-left: 15px !important;
+    font-size: 16px;
+    font-style: italic;
+  }
+  
+  
+  
+  .collections .products {
+    /* display: grid; */
+    /* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
+    /* grid-gap: 1rem; */
+  }
+  
+  .collections .collection .collection-name {
+    /* font-size: 2.4rem; */
+    font-size: 20px;
+    text-transform: uppercase;
+   
+    font-weight: bold;
+  }
+  

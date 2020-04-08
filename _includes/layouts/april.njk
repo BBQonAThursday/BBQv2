@@ -23,15 +23,573 @@ js: april.js
 <body>
   <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
     <article class="project--container">
-     
-      </article>
-</article>
-      <article class="overview">
-        {{ content | safe }}
-      </article>
-      </main>
-  </body>
-  {% if js %}
-  <script type="text/javascript" src="../../js/{{js}}"></script>
-      {% endif %}
+      <section class="site-banner-container full bleed">
+        <article class="site-banner">
+          <h1 class="heading--large">We Deliver!</h1>
+          <p class="lede text-center">Call us now to place a delivery order. Both locations are providing delivery
+            options for our customers. 10am - 8pm, everyday of the week.</p>
+          <ul class="locations">
+            <li>Madison: <a class="phone-number" href="tel:608-284-0151">608-284-0151</a></li>
+            <li>Milwaukee: <a class="phone-number" href="tel:414-962-3052">414-962-3052</a></li>
+          </ul>
+
+          <p class="details text-center">Free delivery within 2 miles. $3.99 delivery fee for 2-5 miles. Outside of 5
+            miles, same day delivery.</p>
+        </article>
+      </section>
+      <h1 class="element-center text-center"><strong>CBD MENU</strong></h1>
+      <p class="body--regular element-center text-center">Below you will find a listing of our CBD products and
+        offerings. Additionally, you can message either one of our stores on facebook for more information on products
+        available as well as request photos. <a href="https://www.facebook.com/knuckleheadstobacco/"
+          target="blank">Madison</a> or <a href="https://www.facebook.com/KnuckleheadsMilwaukee"
+          target="_blank">Milwaukee</a></p>
+      <section class="collections">
+        <article class="collection">
+          <div class="collection-name">CBD Prerolls</div>
+          <div class="products">
+            <div class="product">
+              {# <img class="product--image" src="https://via.placeholder.com/300x200.png"> #}
+              <div class="product--brand">Hemp Living</div>
+              <ul class="product-variants">
+                <li class="product--variant">Suver Haze <span class="quantity">14.22%</span></li>
+                <li class="product--variant">Cherry Wine <span class="quantity">14.25%</span></li>
+                <li class="product--variant">Lifter <span class="quantity">16.08%</span></li>
+                <li class="product--variant">Sour Space <span class="quantity">18.39%</span></li>
+                <li class="product--variant">Special Sauce <span class="quantity">18.72%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <section class="product--info">
+                <div class="product--brand">Verdure</div>
+                <ul class="product-variants">
+                  <li class="product--variant">Lifter <span class="quantity">14.3%</span></li>
+                  <li class="product--variant">Cherry Uno <span class="quantity">10%</span></li>
+                </ul>
+              </section>
+            </div>
+            <div class="product">
+              <section class="product--info">
+                <div class="product--brand">TKO</div>
+                <ul class="product-variants">
+                  <li class="product--variant"> <span class="quantity">120mg</span></li>
+                  <li class="product--variant">Kief <span class="quantity">275mg</span></li>
+                  <li class="product--variant">Caviar <span class="quantity">400mg</span></li>
+                  <li class="product--variant">Hemp Blunt <span class="quantity">5% CBD (no nicotine)</span></li>
+                </ul>
+              </section>
+            </div>
+            <div class="product">
+              <article class="product--info">
+                <div class="product--brand">WI CBD</div>
+                <ul class="product-variants">
+                  <li class="product--variant">24k Gold Cone</li>
+                  <li class="product--variant">King Palm</li>
+                  <li class="product--variant">Flavored King lim
+                    <ul class="flavors">
+                      <li>Strawberry</li>
+                      <li>Fruit Passion</li>
+                    </ul>
+                  <li class="product--variant">Hemp Blunt</li>
+                </ul>
+            </div>
+
+          </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD Cartridges &amp; Disposable Vapes</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Select CB Disposable Pen - 250mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Lavendar</li>
+                <li class="product--variant">Lemon</li>
+                <li class="product--variant">Peppermint</li>
+              </ul>
+            </div>
+            <div class="product">
+              <section class="product--info">
+                <div class="product--brand">CBD Living Disposable Pen - 250mg</div>
+                <ul class="product-variants">
+                  <li class="product--variant">Assorted Flavors</li>
+                </ul>
+              </section>
+            </div>
+            <div class="product">
+              <section class="product--info">
+                <div class="product--brand">CBD Lion Disposable Pen - 50mg</div>
+                <ul class="product-variants">
+                  <li class="product--variant">Assorted Flavors</li>
+                </ul>
+              </section>
+            </div>
+            <div class="product">
+              <section class="product--info">
+                <div class="product--brand">Bluum Disposable Vape - 100mg</div>
+                <ul class="product-variants">
+                  <li class="product--variant">Mint</li>
+                  <li class="product--variant">Mango</li>
+                  <li class="product--variant">Berry</li>
+                  <li class="product--variant">Tobacco</li>
+                </ul>
+              </section>
+            </div>
+            <div class="product">
+              <section class="product--info">
+                <div class="product--brand">Rolled Green Disposable Vape - 50mg</div>
+                <ul class="product-variants">
+                  <li class="product--variant">Also available with nicotine!</li>
+                </ul>
+              </section>
+            </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD Flower</div>
+          <div class="collection-note">All are available in the following quantities:</div>
+          <div class="collection-note">1g, 3.5g, 7g, 14g, 28g</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Northwoods</div>
+              <ul class="product-variants">
+                <li class="product--variant">Wife <span class="quantity">12.89%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Verdure</div>
+              <ul class="product-variants">
+                <li class="product--variant">Baox <span class="quantity">16.98%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">CBD Farmacy</div>
+              <ul class="product-variants">
+                <li class="product--variant">Wife <span class="quantity">8.03%</span></li>
+                <li class="product--variant">Sweet Grass <span class="quantity">11.41%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">CBD Farmacy</div>
+              <ul class="product-variants">
+                <li class="product--variant">Hobarts Haze <span class="quantity">12.3%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">TKO</div>
+              <ul class="product-variants">
+                <li class="product--variant">Various Strains</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Sunrise Ranch</div>
+              <ul class="product-variants">
+                <li class="product--variant">Abacus <span class="quantity">14%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Moonrocks</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">73.94%</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">WI CBD</div>
+              <ul class="product-variants">
+                <li class="product--variant">T1 <span class="quantity">9.02%</span></li>
+                <li class="product--variant">Sweet Grass <span class="quantity">12.04%</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD Edibles</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Just CBD Gummies</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">250mg</span></li>
+                <li class="product--variant"><span class="quantity">500mg</span></li>
+                <li class="product--variant"><span class="quantity">750mg</span></li>
+                <li class="product--variant"><span class="quantity">1000mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Healing Nation Gummies</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">250mg</span></li>
+                <li class="product--variant"><span class="quantity">500mg</span></li>
+                <li class="product--variant"><span class="quantity">750mg</span></li>
+                <li class="product--variant"><span class="quantity">1000mg</span></li>
+                <li class="product--variant"><span class="quantity">2000mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Sun State Gummies</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">500mg</span></li>
+                <li class="product--variant"><span class="quantity">1150mg - with Melatonin</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Chocolate Bars</div>
+              <ul class="product-variants">
+                <li class="product--variant">Toffee <span class="quantity">100mg</span></li>
+                <li class="product--variant">Cherry <span class="quantity">100mg</span></li>
+                <li class="product--variant">Strawberry Cream <span class="quantity">100mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Green Lotus Gummies</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">60mg - with Melatonin</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Moonrock Candy Chocolate Covered Cereal</div>
+              <ul class="product-variants">
+                <li class="product--variant">Assorted Cereal Flavors <span class="quantity">200mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Hard Candy Hearts - Local &amp; Organic - Sublingual</div>
+              <ul class="product-variants">
+                <li class="product--variant">Assorted Flavors <span class="quantity">25mg</span></li>
+                <li class="product--variant">Assorted Flavors <span class="quantity">50mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Suckers - Sublingual</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">25mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Cannadip - Sublingual</div>
+              <ul class="product-variants">
+                <li class="product--variant">Mint <span class="quantity">150mg</span></li>
+                <li class="product--variant">Lemon <span class="quantity">150mg</span></li>
+                <li class="product--variant">American <span class="quantity">150mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Raw Honey Jar Rescue Bees!</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">250mg</span></li>
+                <li class="product--variant"><span class="quantity">500mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Honey Stick</div>
+              <ul class="product-variants">
+                <li class="product--variant">Buy 4 get 1 free! <span class="quantity">20mg ea.</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Hakuna Coffee</div>
+              <p class="product--note">A portion of the proceeds are donated to combat homelessness! Full Spectrum & Nanotech incressed strength</p>
+              <ul class="product-variants">
+                <li class="product--variant">Awaken <span class="quantity">8oz - 85mg or 1oz - 10.5mg</span></li>
+                <li class="product--variant">Decaf <span class="quantity">8oz - 85mg or 1oz - 10.5mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Hakuna Tea</div>
+              <p class="product--note">Available in 18ct. Box - 90mg total, single pouch - 5mg, sampler box 20ct</p>
+              <ul class="product-variants">
+                <li class="product--variant">Chamomile</li>
+                <li class="product--variant">Turmeric &amp; Ginger</li>
+                <li class="product--variant">Matcha</li>
+                <li class="product--variant">Peppermint</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">CBD Living Tea</div>
+              <ul class="product-variants">
+                <li class="product--variant">Loose Tea - Assorted Flavors<span class="quantity">150mg</span></li>
+                <li class="product--variant">Instant Matcha<span class="quantity">150mg</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">Pet CBD</div>
+          <div class="collection-note">We also carry non-CBD pet treats &amp; toys</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Tinctures</div>
+              <ul class="product-variants">
+                <li class="product--variant">Pet Releaf <span class="quantity">100mg</span></li>
+                <li class="product--variant">Select CBD<span class="quantity">750mg</span></li>
+                <li class="product--variant">Cat Health <span class="quantity">120mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Capsules</div>
+              <ul class="product-variants">
+                <li class="product--variant">Cat <span class="quantity">75mg - 30ct.</span></li>
+                <li class="product--variant">Dog<span class="quantity">150mg - 30ct.</span></li>
+                <li class="product--variant">Full Spectrum <span class="quantity">150mg - 10ct.</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Nose &amp; Paw Salve</div>
+              <ul class="product-variants">
+                <li class="product--variant">Dog or Cat <span class="quantity">100mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Koi Dog Treats</div>
+              <p class="product--note">A portion of proceeds donated to iPittytheBull</p>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">50mg 25ct.</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Holistic Hound</div>
+              <ul class="product-variants">
+                <li class="product--variant">Dog treats
+                  <ul class="flavors">
+                    <li class="product--variant"><span class="quantity">12mg 4ct.</span></li>
+                    <li class="product--variant"><span class="quantity">30mg 4ct.</span></li>
+                    <li class="product--variant"><span class="quantity">120mg 40ct.</span></li>
+                    <li class="product--variant"><span class="quantity">300mg 40ct.</span></li>
+                  </ul>
+                </li>
+                <li class="product--variant">Cat treats - salmon or chicken<span class="quantity">50mg</span></li>
+                <li class="product--variant">Pet Releaf Treats
+                  <ul class="flavors">
+                    <li class="product--variant"><span class="quantity">15mg</span></li>
+                    <li class="product--variant"><span class="quantity">45mg</span></li>
+                    <li class="product--variant"><span class="quantity">90mg</span></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </article>   
+        <article class="collection">
+          <div class="collection-name">CBD Tinctures</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Quality CBD</div>
+              <div class="product--note">Made in Madison, WI</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">1000mg</span></li>
+                <li class="product--variant"><span class="quantity">2500mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Good Vide</div>
+              <div class="product--note">Made in Denver, CO</div>
+              <ul class="product-variants">
+                <li class="product--variant">Lavendar <span class="quantity">2000mg</span></li>
+                <li class="product--variant">Peppermint <span class="quantity">2000mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Hakuna Water Soluble &amp; Full Spectrum</div>
+              <ul class="product-variants">
+                <li class="product--variant">Unflavored <span class="quantity">160mg</span></li>
+                <li class="product--variant">Blue Dream <span class="quantity">160mg</span></li>
+                <li class="product--variant">ACDC <span class="quantity">160mg</span></li>
+                <li class="product--variant">Wedding Cake <span class="quantity">160mg</span></li>
+              </ul>
+            </div> 
+            <div class="product">
+              <div class="product--brand">Lifted</div>
+              <ul class="product-variants">
+                <li class="product--variant">Spray <span class="quantity">100mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Therapeutics of Wisconsin</div>
+              <div class="product--note">Local &amp; Organic</div>
+              <div class="product--note">Available in 250mg, 500mg, 1000mg, 1500mg, 2000mg &amp; 2500mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Isolate</li>
+                <li class="product--variant">Broad Spectrum</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Naked CBD</div>
+              <div class="product--note">Available in 600mg &amp; 1200mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Unflavored</li>
+                <li class="product--variant">Berry</li>
+                <li class="product--variant">Hawaiian Pog</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">CBD Living</div>
+              <div class="product--note">Use of nanotechnology increases the bioavailability</div>
+              <ul class="product-variants">
+                <li class="product--variant">Full Spectrum <span class="quantity">250mg or 500mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Select CBD</div>
+              <ul class="product-variants">
+                <li class="product--variant">Peppermint <span class="quantity">1000mg</span></li>
+                <li class="product--variant">Lavendar <span class="quantity">1000mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Social CBD Broad Spectrum</div>
+              <div class="product--note">Available in 750mg or 1500mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Lemon</li>
+                <li class="product--variant">Pomegranate</li>
+                <li class="product--variant">Unflavored</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Pachamama CBD</div>
+              <div class="product--note">Available in 750mg or 1750mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Kava kava Valerian</li>
+                <li class="product--variant">Goji Cacao</li>
+                <li class="product--variant">Green Tea Echinacea</li>
+                <li class="product--variant">Natural</li>
+              </ul>
+            </div>           
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD Hempcigs</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Vance Global Biodegradable Filter</div>
+              <ul class="product-variants">
+                <li class="product--variant">Lavendar <span class="quantity">1000mg</span></li>
+                <li class="product--variant"><span class="quantity">1500mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Lifted Living</div>
+              <ul class="product-variants">
+                <li class="product--variant">Plain <span class="quantity">1200mg</span></li>
+                <li class="product--variant">Menthol <span class="quantity">1200mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Wild Hemp</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">200mg</span></li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">WI CBD</div>
+              <div class="product--note">Organically Grown &amp; Local. Now Available with Lavendar!</div>
+              <ul class="product-variants">
+                <li class="product--variant"><span class="quantity">100mg</span></li>
+                <li class="product--variant"><span class="quantity">1000mg</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD E-Liquid</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Naked</div>
+              <div class="product--note">Available in 600mg or 1200mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Really Berry: Blueberries &amp; Blackberries with a lil’ lemon</li>
+                <li class="product--variant">Lava Flow: Strawberries, Pineapple, &amp; Coconut</li>
+                <li class="product--variant">Hawaiian Pog: Orange, Guava, &amp; Passionfruit</li>
+                <li class="product--variant">Amazing Mango: Mango, Peach, &amp; Cream</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Pachamama</div>
+              <div class="product--note">Available in 250mg or 500mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Minty Mango: Sweet mango paired with ice cold mint</li>
+                <li class="product--variant">Grape Berry: Grape mixed with sweet summer berries</li>
+                <li class="product--variant">Strawberry Watermelon</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Hempbomb</div>
+              <div class="product--note">Available in 75mg</div>
+              <ul class="product-variants">
+                <li class="product--variant">Unflavored</li>
+                <li class="product--variant">Blueberry Jam</li>
+                <li class="product--variant">Arctic Spearmint Blast</li>
+                <li class="product--variant">Exotic Watermelon Kush</li>
+                <li class="product--variant">Sweet Mango Seduction</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD Capsules</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Select CBD</div>
+              <div class="product--note">Available in 1000mg 30ct.</div>
+              <ul class="product-variants">
+                <li class="product--variant">Boost</li>
+                <li class="product--variant">Balance</li>
+                <li class="product--variant">Recover</li>
+                <li class="product--variant">Rest</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Montel Williams</div>
+              <div class="product--note">Available in 1500mg 30ct.</div>
+              <ul class="product-variants">
+                <li class="product--variant">Relax</li>
+                <li class="product--variant">Alert</li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">Ecocaps</div>
+              <ul class="product-variants">
+                <li class="product--variant">Full Sectrum <span class="quantity">900mg 30ct.</span></li>
+                <li class="product--variant">Full Sectrum <span class="quantity">30mg</span></li>
+              </ul>
+            </div>
+          </div>
+        </article>
+        <article class="collection">
+          <div class="collection-name">CBD Concentrates</div>
+          <div class="product--note">Undiluted &amp; Certified Botanical Terpenes</div>
+          <div class="products">
+            <div class="product">
+              <div class="product--brand">Madtown</div>
+              <ul class="product-variants">
+                <li class="product--variant">Isolate <span class="quantity">500mg</span></li>
+                <li class="product--variant">Isolate <span class="quantity">1000mg</span></li>
+                <li class="product--variant">Shatter <span class="quantity">1000mg</span>
+                  <ul class="flavors">
+                    <li class="product--variant">Strawberry</li>
+                    <li class="product--variant">Grape Ape</li>
+                    <li class="product--variant">Zkittles</li>
+                    <li class="product--variant">Gelato</li>
+                    <li class="product--variant">Cannalope Haze</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="product">
+              <div class="product--brand">True Terpenes</div>
+              <ul class="product-variants">
+                <li class="product--variant">2mL Bottle</li>
+              </ul>
+            </div>
+          </div>
+        </article> 
+      </section>
+    </article>
+    </article>
+    <article class="overview">
+      {{ content | safe }}
+    </article>
+    </main>
+</body>
+{% if js %}
+<script type="text/javascript" src="../../js/{{js}}"></script>
+{% endif %}
+
 </html>
