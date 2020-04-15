@@ -142,7 +142,7 @@ p,
   p,
   .body--regular {
     margin-bottom: 3rem;
-    font-family: Lora;
+    font-family: Saira;
     font-size: 1.6em;
     line-height: 1.5;
     font-weight: 400;
@@ -152,7 +152,7 @@ p,
     @include breakpoint(md) {
       letter-spacing: -2px;
     }
-    
+
   }
 
   default {

@@ -1,31 +1,35 @@
+#main-header {
+  background-color: #231f20 !important;
+}
+
 .full-bleed {
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
 }
 
 .text-center {
-    text-align:center;
+  text-align: center;
 }
+
 .element-center {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .site-banner-container {
-    padding: 7rem 0;
-    background-color: #222;
-    margin-bottom: 4rem;
+  padding: 7rem 0;
+  background-color: #222;
 }
 
 .site-banner {
-    max-width: 120rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1.5;
+  max-width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
 .site-banner .heading--large,
@@ -34,114 +38,126 @@
 .phone-number,
 .locations li .phone-number,
 .details {
-    color: #fff;
+  color: #fff;
 }
 
 .site-banner .heading--large {
-    font-size: 4rem;
-    margin-bottom: 1.5rem;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
 }
 
 .site-banner .lede {
-    font-size: 2rem;
-    margin-bottom: 3rem;
-    max-width: 66ch;
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  max-width: 66ch;
 }
 
 .locations {
-    font-size: 1.8rem;
+  font-size: 1.8rem;
 }
 
 .locations li {
-    margin-bottom: 2rem;
-    list-style-type: none;
+  margin-bottom: 2rem;
+  list-style-type: none;
 }
 
 .locations li .phone-number {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .body--regular {
-    margin-bottom: 1.5rem;
-    font-size: 1.6em;
-    line-height: 1.5;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0em;
-    max-width: 66ch;
+  margin-bottom: 1.5rem;
+  font-size: 1.6em;
+  line-height: 1.5;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0em;
+  max-width: 66ch;
 }
-
-
-
-
 
 /* Collections*/
 
+.cbd-menu-wrapper {
+  background-color: #eee;
+  padding-top: 8rem;
+}
+
 .collections {
-    max-width: 120rem;
-    margin-left: auto;
-    margin-right: auto;
-       
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.collection {
+  padding: 4rem 1rem 1rem;
 }
 
 .collection-name {
-    font-size: 2.4rem;
-    margin-bottom: .75rem;
+  font-size: 24px;
+  margin-bottom: .75rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+
+.collection-note {
+  font-size: 16px;
+  max-width: 66ch;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .products {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    grid-gap: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  grid-gap: 1rem;
+  margin-top: 2rem;
 }
-/* Inline #3 | http://localhost:8080/projects/april/ */
+
+.product {
+  margin-bottom: 2rem;
+  padding: 0;
+  background-color: #ffffffe0;
+  border-radius: 4px;
+}
 
 .product--brand {
-    font-weight: bold;
-    font-size: 18px;
-  }
-  
-  .collection {
-    padding: 1rem;
-  }
-  
-  .product--brand {
-   
-    font-size: 16px;
-  }
-  
-  .product-variants {
-    padding-left: 1rem !important;
-    list-style-type: disc !important;
-  }
-  
-  .product {
-    margin-bottom: 2rem;
-    padding: 2rem;
-  }
+  font-weight: bold;
+  font-size: 16px;
+}
 
-  .product:first-child{
-      padding-left: 0;
-  }
+.product-variants {
+  padding-left: 1rem !important;
+  list-style-type: disc !important;
+}
 
-  .product:last-child {
-      padding-right: 0;
-  }
-  
-  .product-variants {
-    /* padding-left: 1rem !important; */
-    padding-left: 15px !important;
-    font-size: 16px;
-    font-style: italic;
-  }
-  
-  
-  
-  .collections .collection .collection-name {
-    /* font-size: 2.4rem; */
-    font-size: 20px;
-    text-transform: uppercase;
-   
-    font-weight: bold;
-  }
-  
+.product--image-container {
+  width: 100%;
+  max-height: 200px;
+  overflow: hidden;
+}
+
+.product--image {
+  width: 300px;
+  height: 200px;
+}
+
+.product--info {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.product--note {
+  font-size: 16px;
+  color: #000000b0;
+}
+
+.product-variants {
+  /* padding-left: 1rem !important; */
+  padding-left: 15px !important;
+  font-size: 16px;
+  font-style: italic;
+}

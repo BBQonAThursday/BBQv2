@@ -23,8 +23,8 @@ html {
 
 .home--page {
   background-color: $background;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(640px, 1fr));
   color: $base-text;
   height: 100vh;
 }
@@ -57,22 +57,24 @@ html {
 }
 
 .nav--container {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   width: 100%;
   justify-content: space-between;
+  max-width: 75rem;
+  margin-bottom: 4rem;
 }
 
 .nav {
   display: flex;
   flex-direction: column;
-  max-height: 40rem;
+  max-height: 32rem;
   flex-wrap: wrap;
-  min-width: 45rem;
 
   .nav--item {
     font-weight: 400;
     margin-bottom: 0;
+    padding-right: 4rem;
   }
 
   .nav--link {

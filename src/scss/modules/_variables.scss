@@ -8,7 +8,7 @@ $white: #fff;
 $off-white: #ebe9e9;
 $heading-accent: #dfba69;
 
-$background: #fee5a5;
+$background: $off-white;
 $main-color-1: $base-text;
 $menu-color-active: #486d87;
 $menu-color: lighten($menu-color-active, 20%);
