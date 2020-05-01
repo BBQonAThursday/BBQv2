@@ -1,0 +1,977 @@
+[
+  {
+    "collectionName": "CBD Prerolls",
+    "products": [
+      {
+        "name": "Hemp Living",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/hemplivingpreroll.jpg",
+        "variants": [
+          {
+            "name": "Suver Haze 14.22%"
+          },
+          {
+            "name": "Cherry Wine 14.25%"
+          },
+          {
+            "name": "Lifter 16.08%"
+          },
+          {
+            "name": "Sour Space 18.39%"
+          },
+          {
+            "name": "Special Sauce 18.72%"
+          }
+        ]
+      },
+      {
+        "name": "Verdure",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdverdureprerolls.jpg",
+        "variants": [
+          {
+            "name": "Lifter 14.3%"
+          },
+          {
+            "name": "Cherry Uno 10%"
+          }
+        ]
+      },
+      {
+        "name": "TKO",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/tkoprerolls.jpg",
+        "variants": [
+          {
+            "name": "120mg"
+          },
+          {
+            "name": "Kief 275mg"
+          },
+          {
+            "name": "Caviar 400mg"
+          },
+          {
+            "name": "Hemp Blunt 5% CBD (no nicotine)"
+          }
+        ]
+      },
+      {
+        "name": "WI CBD",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdwicbdprerolls.jpg",
+        "variants": [
+          {
+            "name": "24k Gold Cone"
+          },
+          {
+            "name": "King Palm"
+          },
+          {
+            "name": "Flavored King Palm:",
+            "subVariants": [
+              {
+                "name": "Strawberry"
+              },
+              {
+                "name": "Fruit Passion"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Cartridges & Disposable Vapes",
+    "products": [
+      {
+        "name": "Select CBD Disposable Pen - 250mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdselectdisposables.jpg",
+        "variants": [
+          {
+            "name": "Assorted Flavors"
+          }
+        ]
+      },
+      {
+        "name": "CBD Lion Disposable Pen - 50mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdliondisposable.jpg",
+        "variants": [
+          {
+            "name": "Assorted Flavors"
+          }
+        ]
+      },
+      {
+        "name": "Bluum Disposable Vape - 100mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdbluumdisposablevape.jpg",
+        "variants": [
+          {
+            "name": "Mint"
+          },
+          {
+            "name": "Mango"
+          },
+          {
+            "name": "Berry"
+          },
+          {
+            "name": "Tobacco"
+          }
+        ]
+      },
+      {
+        "name": "Rolled Green Disposable Vape - 50mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/rolledgreendisposable.jpg",
+        "variants": [
+          {
+            "name": "Also available with nicotine!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Flower",
+    "collectionNote": "All are available in the following quantities: 1g, 3.5g, 7g, 14g, 28g",
+    "products": [
+      {
+        "name": "Northwoods",
+        "variants": [
+          {
+            "name": "Wife 12.89%"
+          }
+        ]
+      },
+      {
+        "name": "Verdure",
+        "variants": [
+          {
+            "name": "Baox 16.98%"
+          }
+        ]
+      },
+      {
+        "name": "CBD Farmacy",
+        "variants": [
+          {
+            "name": "Wife 8.03%"
+          },
+          {
+            "name": "Sweet Grass 11.41%"
+          }
+        ]
+      },
+      {
+        "name": "Hakuna",
+        "variants": [
+          {
+            "name": "Hobarts Haze 12.3%"
+          }
+        ]
+      },
+      {
+        "name": "TKO",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdtkoflower.jpg",
+        "variants": [
+          {
+            "name": "Various Strains"
+          }
+        ]
+      },
+      {
+        "name": "Sunrise Ranch",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/abacushempflower.jpg",
+        "variants": [
+          {
+            "name": "Abacus 14%"
+          }
+        ]
+      },
+      {
+        "name": "Moonrocks",
+        "variants": [
+          {
+            "name": "73.94%"
+          }
+        ]
+      },
+      {
+        "name": "WI CBD",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/wicbdt1hempflower.jpg",
+        "variants": [
+          {
+            "name": "T1 9.02%"
+          },
+          {
+            "name": "Sweet Grass 12.04%"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Edibles",
+    "products": [
+      {
+        "name": "Just Gummies",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/justcbdgummies.jpg",
+        "variants": [
+          {
+            "name": "250mg"
+          },
+          {
+            "name": "500mg"
+          },
+          {
+            "name": "750mg"
+          },
+          {
+            "name": "1000mg"
+          }
+        ]
+      },
+      {
+        "name": "Just CBD Gummies",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/justcbdgummies.jpg",
+        "variants": [
+          {
+            "name": "250mg"
+          },
+          {
+            "name": "500mg"
+          },
+          {
+            "name": "750mg"
+          },
+          {
+            "name": "1000mg"
+          }
+        ]
+      },
+      {
+        "name": "Healing Nation Gummies",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/healingnationgummies.jpg",
+        "variants": [
+          {
+            "name": "250mg"
+          },
+          {
+            "name": "500mg"
+          },
+          {
+            "name": "750mg"
+          },
+          {
+            "name": "1000mg"
+          },
+          {
+            "name": "2000mg"
+          }
+        ]
+      },
+      {
+        "name": "Sun State Gummies",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdsunstategummies.jpg",
+        "variants": [
+          {
+            "name": "500mg"
+          },
+          {
+            "name": "1150mg - with Melatonin"
+          }
+        ]
+      },
+      {
+        "name": "Chocolate Bars",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdchocolatebar.jpg",
+        "variants": [
+          {
+            "name": "Toffee - 100mg"
+          },
+          {
+            "name": "Cherry - 100mg"
+          },
+          {
+            "name": "Strawberry Cream - 100mg"
+          }
+        ]
+      },
+      {
+        "name": "Green Lotus Gummies",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdgreenlotusgummies.jpg",
+        "variants": [
+          {
+            "name": "60mg - with Melatonin"
+          }
+        ]
+      },
+      {
+        "name": "Moonrock Candy Chocolate Covered Cereal",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdmoonrockcandy.jpg",
+        "variants": [
+          {
+            "name": "Assorted Cereal Flavors - 200mg"
+          }
+        ]
+      },
+      {
+        "name": "Hard Candy Hearts - Local & Organic - Sublingual",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdwiscotherhardcandies.jpg",
+        "variants": [
+          {
+            "name": "Assorted Flavors - 25mg"
+          },
+          {
+            "name": "Assorted Flavors - 50mg"
+          }
+        ]
+      },
+      {
+        "name": "Suckers - Sublingual",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdsuckers.jpg",
+        "variants": [
+          {
+            "name": "25mg"
+          }
+        ]
+      },
+      {
+        "name": "Cannadip - Sublingual",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdcannadips.jpg",
+        "variants": [
+          {
+            "name": "Mint - 150mg"
+          },
+          {
+            "name": "Lemon - 150mg"
+          },
+          {
+            "name": "American - 150mg"
+          }
+        ]
+      },
+      {
+        "name": "Raw Honey Jar Rescue Bees!",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdrawhoney.jpg",
+        "variants": [
+          {
+            "name": "250mg"
+          },
+          {
+            "name": "500mg"
+          }
+        ]
+      },
+      {
+        "name": "Hakuna Coffee",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdcoffee.jpg",
+        "productNote": "A portion of the proceeds are donated to combat homelessness! Full Spectrum & Nanotech increased strength",
+        "variants": [
+          {
+            "name": "Awaken 8oz - 85mg or 1oz - 10.5mg"
+          },
+          {
+            "name": "Decafe - 8oz - 85mg or 1oz - 10.5mg"
+          }
+        ]
+      },
+      {
+        "name": "Hakuna Tea",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdhakunatea.jpg",
+        "productNote": "Available in 18ct. Box - 90mg total, single pouch - 5mg, sampler box 20ct",
+        "variants": [
+          {
+            "name": "Chamomile"
+          },
+          {
+            "name": "Turmeric & Ginger"
+          },
+          {
+            "name": "Matcha"
+          },
+          {
+            "name": "Peppermint"
+          }
+        ]
+      },
+      {
+        "name": "CBD Living Tea",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdlivingloosetea.jpg",
+        "variants": [
+          {
+            "name": "Loose Tea - Assorted Flavors - 150mg"
+          },
+          {
+            "name": "Instant Matcha - 150mg"
+          },
+          {
+            "name": "Matcha"
+          },
+          {
+            "name": "Peppermint"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "Pet CBD",
+    "collectionNote": "We also carry non-CBD pet treats & toys.",
+    "products": [
+      {
+        "name": "Tinctures",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpettinctures.jpg",
+        "variants": [
+          {
+            "name": "Pet Releaf 100mg"
+          },
+          {
+            "name": "Select CBD 750mg"
+          },
+          {
+            "name": "Cat Health 120mg"
+          }
+        ]
+      },
+      {
+        "name": "Capsules",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpetcapsules.jpg",
+        "variants": [
+          {
+            "name": "Cat 75mg - 30ct."
+          },
+          {
+            "name": "Dog 150mg - 30ct."
+          },
+          {
+            "name": "Full Spectrum 150mg - 10ct."
+          }
+        ]
+      },
+      {
+        "name": "Nose & Paw Salve",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpetsalve.jpg",
+        "variants": [
+          {
+            "name": "Dor or Cat - 100mg"
+          }
+        ]
+      },
+      {
+        "name": "Koi Dog Treats",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdkoitreats.jpg",
+        "productNote": "A portion of proceeds donated to iPittytheBull",
+        "variants": [
+          {
+            "name": "50mg 25ct."
+          }
+        ]
+      },
+      {
+        "name": "Holistic Hound Dog Treats",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdholistichoundtreats.jpg",
+        "variants": [
+          {
+            "name": "12mg 4ct."
+          },
+          {
+            "name": "30mg 4ct."
+          },
+          {
+            "name": "120mg 40ct."
+          },
+          {
+            "name": "300mg 40ct."
+          }
+        ]
+      },
+      {
+        "name": "Pet Releaf Treats",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpetreleaftreats.jpg",
+        "variants": [
+          {
+            "name": "15mg"
+          },
+          {
+            "name": "45mg"
+          },
+          {
+            "name": "90mg"
+          }
+        ]
+      },
+      {
+        "name": "Cat Treats",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbddoghealthtreats.jpg",
+        "variants": [
+          {
+            "name": "Salmon - 50mg"
+          },
+          {
+            "name": "Chicken - 50mg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Tinctures",
+    "products": [
+      {
+        "name": "Quality CBD",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdqualitytincture.jpg",
+        "productNote": "Made in Madison, WI",
+        "variants": [
+          {
+            "name": "1000mg"
+          },
+          {
+            "name": "2500mg"
+          }
+        ]
+      },
+      {
+        "name": "Good Vibe",
+        "productNote": "Made in Denver, CO",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdgoodvibetincture.jpg",
+        "variants": [
+          {
+            "name": "Lavender 2000mg"
+          },
+          {
+            "name": "Peppermint 2000mg"
+          }
+        ]
+      },
+      {
+        "name": "Lifted",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdlifedanxietyspray.jpg",
+        "variants": [
+          {
+            "name": "Spray 100mg"
+          }
+        ]
+      },
+      {
+        "name": "Therapeutics of Wisconsin",
+        "productNote": "Local & Organic. Available in 250mg, 500mg, 1000mg, 1500mg, 2000mg & 2500mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdwithertinctures.jpg",
+        "variants": [
+          {
+            "name": "Isolate"
+          },
+          {
+            "name": "Broad Spectrum"
+          }
+        ]
+      },
+      {
+        "name": "Naked CBD",
+        "productNote": "Available in 600mg & 1200mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdnakedtincture.jpg",
+        "variants": [
+          {
+            "name": "Unflavored"
+          },
+          {
+            "name": "Berry"
+          },
+          {
+            "name": "Hawaiian Pog"
+          }
+        ]
+      },
+      {
+        "name": "CBD Living",
+        "productNote": "Use of nanotechnology increases the bioavailability",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdlivingtinctures.jpg",
+        "variants": [
+          {
+            "name": "Full Spectrum 250mg or 500mg"
+          }
+        ]
+      },
+      {
+        "name": "Select CBD",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/selectcbdtinctures.jpg",
+        "variants": [
+          {
+            "name": "Peppermint 1000mg"
+          },
+          {
+            "name": "Lavender 1000mg"
+          }
+        ]
+      },
+      {
+        "name": "Social CBD Broad Spectrum",
+        "productNote": "Available in 750mg or 1500mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/socialcbdtinctures.jpg",
+        "variants": [
+          {
+            "name": "Lemon"
+          },
+          {
+            "name": "Pomegranate"
+          },
+          {
+            "name": "Unflavored"
+          }
+        ]
+      },
+      {
+        "name": "Pachamama CBD",
+        "productNote": "Available in 750mg or 1500mg",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpachamatincture.jpg",
+        "variants": [
+          {
+            "name": "Goji Cacao"
+          },
+          {
+            "name": "Green Tea Echinacea"
+          },
+          {
+            "name": "Natural"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Hempcigs",
+    "products": [
+      {
+        "name": "Vance Global",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdvanceglobalhempcigs.jpg",
+        "productNote": "Biodegradable Filter",
+        "variants": [
+          {
+            "name": "Lavender 1000mg"
+          },
+          {
+            "name": "1500mg"
+          }
+        ]
+      },
+      {
+        "name": "Lifted Living",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdliftedlivinghempcigs.jpg",
+        "variants": [
+          {
+            "name": "Plain 1200mg"
+          },
+          {
+            "name": "Menthol 1200mg"
+          }
+        ]
+      },
+      {
+        "name": "Wild Hemp",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdwildhempcigs.jpg",
+        "variants": [
+          {
+            "name": "200mg"
+          }
+        ]
+      },
+      {
+        "name": "WI CBD",
+        "productNote": "Organically Grown & Local. Now Available with Lavender!",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/wicbdhempcigs.jpg",
+        "variants": [
+          {
+            "name": "100mg"
+          },
+          {
+            "name": "1000mg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD E-Liquid",
+    "products": [
+      {
+        "name": "Naked",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdnakedeliquid.jpg",
+        "productNote": "Available in 600mg or 1200mg",
+        "variants": [
+          {
+            "name": "Really Berry: Blueberries & Blackberries with a lil’ lemon"
+          },
+          {
+            "name": "Lava Flow: Strawberries, Pineapple, & Coconut"
+          },
+          {
+            "name": "Hawaiian Pog: Orange, Guava, & Passionfruit"
+          },
+          {
+            "name": "Amazing Mango: Mango, Peach, & Cream"
+          }
+        ]
+      },
+      {
+        "name": "Pachamama",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpachamamaeliquid.jpg",
+        "productNote": "Available in 250mg or 500mg",
+        "variants": [
+          {
+            "name": "Minty Mango: Sweet mango paired with ice cold mint"
+          },
+          {
+            "name": "Grape Berry: Grape mixed with sweet summer berries"
+          },
+          {
+            "name": "Strawberry Watermelon"
+          }
+        ]
+      },
+      {
+        "name": "Hempbomb",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/hempbombeliquid.jpg",
+        "productNote": "Available in 75mg",
+        "variants": [
+          {
+            "name": "Unflavored"
+          },
+          {
+            "name": "Blueberry Jam"
+          },
+          {
+            "name": "Arctic Spearmint Blast"
+          },
+          {
+            "name": "Exotic Watermelon Kush"
+          },
+          {
+            "name": "Sweet Mango Seduction"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Capsules",
+    "products": [
+      {
+        "name": "Select CBD",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdselectcapsules.jpg",
+        "productNote": "Available in 1000mg 30ct.",
+        "variants": [
+          {
+            "name": "Boost"
+          },
+          {
+            "name": "Balance"
+          },
+          {
+            "name": "Recover"
+          },
+          {
+            "name": "Rest"
+          }
+        ]
+      },
+      {
+        "name": "Montel Williams",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdmontelcapsules.jpg",
+        "productNote": "Available in 1500mg 30ct.",
+        "variants": [
+          {
+            "name": "Relax"
+          },
+          {
+            "name": "Alert"
+          }
+        ]
+      },
+      {
+        "name": "Ecocaps",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdecocaps.jpg",
+        "productNote": "Available in 75mg",
+        "variants": [
+          {
+            "name": "Full Spectrum 900mg 30ct."
+          },
+          {
+            "name": "Full Spectrum 30mg"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Concentrates",
+    "products": [
+      {
+        "name": "Madtown",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdmadtownextracts.jpg",
+        "productNote": "Available in 1000mg 30ct.",
+        "variants": [
+          {
+            "name": "Isolate 500mg"
+          },
+          {
+            "name": "Isolate 1000mg"
+          },
+          {
+            "name": "Shatter 1000mg"
+          }
+        ],
+        "options": [
+          {
+            "name": "Strawberry"
+          },
+          {
+            "name": "Grape Ape"
+          },
+          {
+            "name": "Skittles"
+          },
+          {
+            "name": "Gelato"
+          },
+          {
+            "name": "Cannalope Haze"
+          }
+        ]
+      },
+      {
+        "name": "True Terpenes",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/trueterpenes.jpg",
+        "productNote": "Undiluted &amp; Certified Botanical Terpenes",
+        "variants": [
+          {
+            "name": "2mL Bottle"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Shisha",
+    "products": [
+      {
+        "name": "TKO",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdtkoshisha_NEW.jpg",
+        "productNote": "Available in 250mg & 500mg",
+        "variants": [
+          {
+            "name": "Mint"
+          },
+          {
+            "name": "Blueberry"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "collectionName": "CBD Topicals",
+    "products": [
+      {
+        "name": "Therapeutics of Wisconsin",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdtherapeuticspaincream.jpg",
+        "variants": [
+          {
+            "name": "Pain Butter 250mg"
+          },
+          {
+            "name": "Pain Butter 375mg"
+          },
+          {
+            "name": "Pain Stick 250"
+          }
+        ]
+      },
+      {
+        "name": "Quality CBD",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdqualitybalm.jpg",
+        "variants": [
+          {
+            "name": "Balm 500mg"
+          }
+        ]
+      },
+      {
+        "name": "Good Vibe Body Bar",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdgoodvibebodybar.jpg",
+        "productNote": "Available in 500mg & 1000mg",
+        "variants": [
+          {
+            "name": "Lavender"
+          },
+          {
+            "name": "Peppermint"
+          }
+        ]
+      },
+      {
+        "name": "Good Vibe Lotion",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdgoodvibelotion.jpg",
+        "productNote": "Available in 500mg & 1000mg",
+        "variants": [
+          {
+            "name": "Unscented"
+          }
+        ]
+      },
+      {
+        "name": "Suppositories",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdsuppositories.jpg",
+        "variants": [
+          {
+            "name": "100mg"
+          },
+          {
+            "name": "500mg"
+          }
+        ]
+      },
+      {
+        "name": "Bath Bombs",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdbathbombs.jpg",
+        "variants": [
+          {
+            "name": "35mg"
+          },
+          {
+            "name": "100mg"
+          }
+        ]
+      },
+      {
+        "name": "Pain Patches",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdpainpatches.jpg",
+        "variants": [
+          {
+            "name": "10mg"
+          },
+          {
+            "name": "20mg"
+          },
+          {
+            "name": "60mg"
+          }
+        ]
+      },
+      {
+        "name": "Hand Sanitizer",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdhandsanitizer_NEW.jpg",
+        "variants": [
+          {
+            "name": "50mg"
+          }
+        ]
+      },
+      {
+        "name": "CBD Living Roll On Freeze",
+        "productImageUrl": "http://knuckleheadstobacco.com/wp-content/uploads/2020/04/cbdlivingfreezerollon_NEW.jpg",
+        "variants": [
+          {
+            "name": "250mg"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,4 +1,23 @@
-#main-header {
+.style-guide {
+  .elements {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .style {
+    flex-basis: 50%;
+    margin-bottom: 1rem;
+  }
+}
+
+// Knuckleheads styles
+.entry-content {
+  overflow: hidden;
+}
+
+#main-header,
+.sub-menu {
   background-color: #231f20 !important;
 }
 
@@ -44,21 +63,32 @@
 .site-banner .heading--large {
   font-size: 4rem;
   margin-bottom: 1.5rem;
+  text-align: center;
 }
 
 .site-banner .lede {
   font-size: 2rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   max-width: 66ch;
 }
 
 .locations {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  display: flex;
+  flex-direction: row;
 }
 
 .locations li {
-  margin-bottom: 2rem;
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  line-height: 1.5;
+  margin: 0.75rem 1.5rem;
+  text-align: center;
+  background-color: #7cc68d;
+  padding: 1rem;
+  border-radius: 4px;
 }
 
 .locations li .phone-number {
@@ -86,7 +116,7 @@
   max-width: 1440px;
   margin-left: auto;
   margin-right: auto;
-
+  background-color: #eee;
 }
 
 .collection {
@@ -95,7 +125,7 @@
 
 .collection-name {
   font-size: 24px;
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
   text-transform: uppercase;
   font-weight: bold;
   text-align: center;
