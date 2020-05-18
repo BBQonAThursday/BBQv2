@@ -24,29 +24,41 @@ js: may.js
   <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
     <article class="project--container">
       <section class="site-banner-container full bleed">
-<article class="style-guide">
-        https://www.gloomaps.com/zfoQ7qrcEc
-        <section class="elements headings">
-          <div class="style desktop">
-            <div class="style--class">.large-heading</div>
-            <h1 class="heading--large">Large Heading</h1>
-          </div>
-          <div class="style mobile">
-            <div class="style--class">.large-heading</div>
-            <h1 class="heading--large">Large Heading</h1>
-          </div>
-          <div class="style desktop">
-            <div class="style--class">.heading--medium</div>
-            <div class="heading--medium">Medium Heading</div>
-          </div>
-          <div class="style mobile">
-            <div class="style--class">.heading--medium</div>
-            <div class="heading--medium">Medium Heading</div>
-          </div>
-        </section>
-      </article>
-
-       </article>
+        <article class="style-guide">
+          https://www.gloomaps.com/zfoQ7qrcEc
+          <section class="elements headings">
+            <div class="style desktop">
+              <div class="style--class">.large-heading</div>
+              <h1 class="heading--large">Large Heading</h1>
+            </div>
+            <div class="style mobile">
+              <div class="style--class">.large-heading</div>
+              <h1 class="heading--large">Large Heading</h1>
+            </div>
+            <div class="style desktop">
+              <div class="style--class">.heading--medium</div>
+              <div class="heading--medium">Medium Heading</div>
+            </div>
+            <div class="style mobile">
+              <div class="style--class">.heading--medium</div>
+              <div class="heading--medium">Medium Heading</div>
+            </div>
+          </section>
+        </article>
+    </article>
+    <article class="popup-container">
+      <div class="popup-block">
+        <h1 class="popup-directive">Please Verify Your Age</h1>
+        <p class="lede not-verified">You have not entered your age yet.</p>
+        <p class="lede too-young">You are too young to use our website.</p>
+        <p class="lede body--regular">You must be 18 years of age or older to purchase CBD products. Please enter your
+          birth date to view our site.</p>
+        <form class="age-verification-form">
+          <input type="date" class="age-selector">
+          <input type="submit" value="Verify Age" class="kh-button">
+        </form>
+      </div>
+    </article>
     <article class="overview">
       {{ content | safe }}
     </article>

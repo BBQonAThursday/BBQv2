@@ -1,0 +1,69 @@
+$khBlue: #1c61a3;
+$khGreen: #7cc68d;
+$khOrange: #f2b064;
+$khBlack: #454851;
+$khWhite: #fbfef9;
+$khGreenBlack: #505a57;
+
+// Knuckleheads utilities
+.kh-button {
+  background-color: $khGreen;
+  color: $khBlack;
+  border: 0.1rem solid $khBlack;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+// Popup Container
+.popup-container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #454851d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .popup-directive {
+    font-weight: bold;
+    font-size: 3.6rem;
+    color: $khBlack;
+  }
+
+  .popup-block {
+    background-color: $khWhite;
+    padding: 4rem 2rem;
+    text-align: center;
+    border-radius: 4px;
+    max-width: 480px;
+  }
+
+  .lede {
+    color: $khBlack;
+  }
+  .age-verification-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 1.618rem;
+
+    .age-selector {
+      line-height: 4rem;
+      font-size: 2rem;
+      padding: 0;
+      margin-right: 2rem;
+      width: 20rem;
+      text-align: center;
+    }
+  }
+}
