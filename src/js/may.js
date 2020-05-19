@@ -42,23 +42,26 @@ function successfulSubmission(date) {
   console.log('you are over 18');
   sessionStorage.setItem('age', date);
   sessionStorage.setItem('ageVerified', true);
+  modal.classList.add('hide');
 }
 
 function checkAgeStorage() {
 
-  if( sessionStorage.getItem('age') === null) {
-    console.log('age has not been established. Displaying popup.');
-    modal.classList.remove('hide');
-  }
-  else {
+  
+  if ('age' in sessionStorage){
+    console.log(sessionStorage.getItem('age'));
     let ageTest = sessionStorage.getItem('ageVerified');
 
     if(ageTest === true) {
-      modal.classList.add('.hide');
+      modal.classList.add('hide');
     } else {
-      modal.classList.remove('.hide');
-      form.classList.add('.hide');
+      modal.classList.remove('hide');
+      form.classList.add('hide');
 
     }
+}
+else {
+  console.log('age has not been established. Displaying popup.');
+  modal.classList.remove('hide');
 }
 }

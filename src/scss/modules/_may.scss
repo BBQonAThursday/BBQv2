@@ -15,10 +15,6 @@ $khGreenBlack: #505a57;
   font-size: 1.6rem;
 }
 
-.hide {
-  display: none;
-}
-
 // Popup Container
 .popup-container {
   width: 100vw;
@@ -66,4 +62,8 @@ $khGreenBlack: #505a57;
       text-align: center;
     }
   }
+}
+
+.hide {
+  display: none;
 }
