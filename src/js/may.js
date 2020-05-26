@@ -49,6 +49,7 @@ function checkAgeStorage() {
 
   
   if ('age' in sessionStorage){
+    console.log('age prop exists');
     console.log(sessionStorage.getItem('age'));
     let ageTest = sessionStorage.getItem('ageVerified');
 

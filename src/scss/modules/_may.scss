@@ -15,6 +15,33 @@ $khGreenBlack: #505a57;
   font-size: 1.6rem;
 }
 
+.colors {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .color {
+    flex-basis: 20%;
+    padding: 8rem;
+    max-width: 200px;
+  }
+
+  .khBlack {
+    background-color: $khBlack;
+  }
+  .khGreen {
+    background-color: $khGreen;
+  }
+  .khWhite {
+    background-color: $khWhite;
+  }
+  .khBlue {
+    background-color: $khBlue;
+  }
+  .khOrange {
+    background-color: $khOrange;
+  }
+}
 // Popup Container
 .popup-container {
   width: 100vw;
