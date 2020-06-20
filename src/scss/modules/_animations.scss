@@ -1,0 +1,29 @@
+.hero-logo {
+  animation-duration: 2s;
+  animation-name: fadeIn;
+}
+
+.hero-logo--banner {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    top: 100%;
+  }
+
+  to {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+.knuckleheads {
+  font-family: 'Ramaraja', serif;
+
+  font-family: 'Sorts Mill Goudy', serif;
+
+  font-family: 'Trirong', serif;
+}

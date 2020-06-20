@@ -5,6 +5,45 @@ $khBlack: #454851;
 $khWhite: #fbfef9;
 $khGreenBlack: #505a57;
 
+
+.h1 {
+  font-family: 'Ramaraja', serif;
+  font-weight: normal;
+  font-size: 6.4rem;
+  font-weight: 500;
+  letter-spacing: -1.15px;
+  color: $khBlack;
+}
+
+.h2 {
+  font-family: 'Trirong', serif;
+  color: $khBlack;
+  font-size: 2.4rem;
+  letter-spacing: 0;
+  margin-bottom: 0;
+}
+
+.body--regular,
+.body--small,
+.body--large {
+  font-family: 'Sorts Mill Goudy', serif;
+
+}
+
+.body--regular {
+
+  font-size: 1.6rem;
+}
+
+.lede {
+  font-size: 2rem;
+  max-width: 50ch;
+}
+
+.body--small {
+  font-size: 1.3rem;
+}
+
 // Knuckleheads utilities
 .kh-button {
   background-color: $khGreen;
@@ -15,33 +54,11 @@ $khGreenBlack: #505a57;
   font-size: 1.6rem;
 }
 
-.colors {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-
-  .color {
-    flex-basis: 20%;
-    padding: 8rem;
-    max-width: 200px;
-  }
-
-  .khBlack {
-    background-color: $khBlack;
-  }
-  .khGreen {
-    background-color: $khGreen;
-  }
-  .khWhite {
-    background-color: $khWhite;
-  }
-  .khBlue {
-    background-color: $khBlue;
-  }
-  .khOrange {
-    background-color: $khOrange;
-  }
+.heading-gradient {
+  background: rgb(124, 198, 141);
+  background: linear-gradient(120deg, rgba(124, 198, 141, 1) 14%, rgba(69, 72, 81, 1) 100%);
 }
+
 // Popup Container
 .popup-container {
   width: 100vw;
@@ -49,29 +66,61 @@ $khGreenBlack: #505a57;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: $khWhite;
+  background-color: #454851;
+  background: linear-gradient(120deg, rgba(124, 198, 141, 1) 14%, rgba(69, 72, 81, 1) 70%);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 
-  .popup-directive {
-    font-weight: bold;
-    font-size: 3.6rem;
-    color: $khBlack;
-  }
 
   .popup-block {
     background-color: $khWhite;
-    padding: 4rem 2rem;
     text-align: center;
     border-radius: 4px;
-    max-width: 480px;
+    max-width: 1200px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .popup-content {
+      padding: 4rem;
+      align-self: center;
+    }
+
+    .h2 {
+      margin-bottom: -1rem;
+    }
+
+    .error {
+      display: none;
+    }
+
+    .popup-directive {
+      color: $khBlack;
+      margin-bottom: 0;
+    }
+
+    .lede {
+      margin-bottom: 2rem;
+    }
+
+    .popup-image {
+      max-height: 500px;
+      overflow: hidden;
+
+      .img {
+        width: 500px;
+      }
+    }
   }
 
   .lede {
     color: $khBlack;
   }
+
   .age-verification-form {
     display: flex;
     flex-direction: row;

@@ -15,8 +15,7 @@ js: may.js
   <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
   <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
   <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
-
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Vidaloka&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&family=Trirong&family=Trirong&family=Ramaraja&display=swap" rel="stylesheet"> 
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
 </head>
 
@@ -56,19 +55,26 @@ js: may.js
           </section>
         </article>
     </article>
-    <article class="popup-container">
+   <!--  <article class="popup-container">
       <div class="popup-block">
-        <h1 class="popup-directive">Please Verify Your Age</h1>
-        <p class="lede not-verified">You have not entered your age yet.</p>
-        <p class="lede too-young">You are too young to use our website.</p>
-        <p class="lede body--regular">You must be 18 years of age or older to purchase CBD products. Please enter your
-          birth date to view our site.</p>
+        <div class="popup-content">
+          <h2 class="h2">Welcome to</h2>
+          <h1 class="h1 popup-directive">Knuckleheads</h1>
+          <p class="lede body--regular">You must be 18 years of age or older to purchase CBD products. Please enter your
+            birth date to view our site.</p>
+        <p class="error too-young">You are too young to use our website.</p>
+        
         <form class="age-verification-form">
           <input type="date" class="age-selector">
           <input type="submit" value="Verify Age" class="kh-button">
         </form>
+        <p class="body--small disclaimer">By entering this site you are agreeing to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a></p>
+        </div>
+        <div class="popup-image">
+          <img class="img" src="https://cdn.shopify.com/s/files/1/0284/3852/8074/files/store-sign.jpg?v=1592178175">
+        </div>
       </div>
-    </article>
+    </article> -->
     <article class="overview">
       {{ content | safe }}
     </article>
