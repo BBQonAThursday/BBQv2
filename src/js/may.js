@@ -1,12 +1,14 @@
 
-// var modal = document.querySelector('.popup-container');
-// var form = document.querySelector('.age-verification-form');
-// var ageInput = document.querySelector('.age-selector');
-// var tooYoung = document.querySelector('.too-young');
 
-// document.addEventListener('load', checkAgeStorage);
-// document.addEventListener('load', buildPopUp);
-// form.addEventListener("submit", checkAge);
+document.addEventListener('load', checkAgeStorage);
+var modal = document.querySelector('.popup-container');
+var form = document.querySelector('.age-verification-form');
+var ageInput = document.querySelector('.age-selector');
+var tooYoung = document.querySelector('.too-young');
+
+
+ form.addEventListener("submit", checkAge);
+
 
 
 
@@ -35,7 +37,10 @@ function checkAge(e){
 
 function failedSubmission(date) {
   console.log('you are not over 18');
-  localStorage.setItem('ageVerified', false);
+  sessionStorage.setItem('age', date);
+  sessionStorage.setItem('ageVerified', false);
+  tooYoung.classList.remove('hide');
+  disable(ageInput);
 }
 
 function successfulSubmission(date) {
@@ -45,8 +50,14 @@ function successfulSubmission(date) {
   modal.classList.add('hide');
 }
 
-function checkAgeStorage() {
+function disable(el) {
+  
+  el.setAttribute('disabled', 'true');
+  
+}
 
+function checkAgeStorage() {
+  
   
   if ('age' in sessionStorage){
     console.log('age prop exists');
@@ -82,7 +93,7 @@ function buildPopUp() {
       <input type="date" class="age-selector">
       <input type="submit" value="Verify Age" class="kh-button">
     </form>
-    <p class="body--small disclaimer">By entering this site you are agreeing to the <a href="">Terms of Use</a> and <a href="">Privacy Policy</a></p>
+    <p class="body--small disclaimer">By entering this site you are agreeing to the <a href="/policies/terms-of-service">Terms of Service</a> and <a href="/policies/privacy-policy">Privacy Policy</a></p>
     </div>
     <div class="popup-image">
       <img class="img" src="https://cdn.shopify.com/s/files/1/0284/3852/8074/files/store-sign.jpg?v=1592178175">

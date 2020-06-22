@@ -21,6 +21,7 @@ $khGreenBlack: #505a57;
   font-size: 2.4rem;
   letter-spacing: 0;
   margin-bottom: 0;
+  letter-spacing: 1px;
 }
 
 .body--regular,
@@ -44,14 +45,24 @@ $khGreenBlack: #505a57;
   font-size: 1.3rem;
 }
 
+
+
 // Knuckleheads utilities
 .kh-button {
-  background-color: $khGreen;
-  color: $khBlack;
+  font-family: 'Trirong', serif;
+  font-style: uppercase;
   border: 0.1rem solid $khBlack;
   padding: 0.75rem 1.5rem;
   font-weight: bold;
   font-size: 1.6rem;
+  background-color: $khBlack;
+  color: $khWhite;
+  transition: all .2s ease-in-out;
+}
+
+.kh-button:hover {
+  background: $khBlue;
+  border-color: $khBlue;
 }
 
 .heading-gradient {
@@ -69,25 +80,34 @@ $khGreenBlack: #505a57;
   background-color: #454851;
   background: linear-gradient(120deg, rgba(124, 198, 141, 1) 14%, rgba(69, 72, 81, 1) 70%);
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: column;
+
+  @include breakpoint(sm) {
+    justify-content: center;
+  }
 
 
   .popup-block {
     background-color: $khWhite;
     text-align: center;
     border-radius: 4px;
-    max-width: 1200px;
+    max-width: 100rem;
     width: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    box-shadow: 4px 4px 10px 0px #454851;
 
     .popup-content {
       padding: 4rem;
       align-self: center;
+      width: 100%;
+
+      @include breakpoint(sm) {
+        width: 55%;
+      }
     }
 
     .h2 {
@@ -95,7 +115,10 @@ $khGreenBlack: #505a57;
     }
 
     .error {
-      display: none;
+      color: $khOrange;
+      font-weight: bold;
+      font-size: 1.8rem;
+
     }
 
     .popup-directive {
@@ -108,13 +131,27 @@ $khGreenBlack: #505a57;
     }
 
     .popup-image {
-      max-height: 500px;
-      overflow: hidden;
+      display: none;
+
+
+      @include breakpoint(sm) {
+        max-width: 45%;
+        max-height: 500px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+      }
 
       .img {
-        width: 500px;
+        width: auto;
+        height: 100%
       }
     }
+  }
+
+  .disclaimer {
+    max-width: 100%;
   }
 
   .lede {
@@ -128,6 +165,7 @@ $khGreenBlack: #505a57;
     align-items: center;
     margin-top: 2rem;
     margin-bottom: 1.618rem;
+    padding: 2rem 2rem 4rem 2rem;
 
     .age-selector {
       line-height: 4rem;

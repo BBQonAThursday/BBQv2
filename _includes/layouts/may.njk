@@ -26,7 +26,12 @@ js: may.js
         <article class="style-guide">
           https://www.gloomaps.com/zfoQ7qrcEc
           <section class="elements colors">
-            <div class="color khBlack">#454851</div>
+            <div class="color">
+              <div class="color-block khBlack">
+
+              </div>
+              <div class="body--regular">#454851</div>
+              </div>
             <div class="color khGreen">#7cc68d</div>
             <div class="color khWhite">#fbfef9</div>
             <div class="color khBlue">#1c61a3</div>
@@ -55,14 +60,14 @@ js: may.js
           </section>
         </article>
     </article>
-   <!--  <article class="popup-container">
+   <article class="popup-container">
       <div class="popup-block">
         <div class="popup-content">
           <h2 class="h2">Welcome to</h2>
           <h1 class="h1 popup-directive">Knuckleheads</h1>
-          <p class="lede body--regular">You must be 18 years of age or older to purchase CBD products. Please enter your
-            birth date to view our site.</p>
-        <p class="error too-young">You are too young to use our website.</p>
+          <p class="lede body--regular">You must be 18 years of age or older to enter our store. Please enter your
+            birth date to use our site.</p>
+        <p class="error hide too-young">You are too young to use our website.</p>
         
         <form class="age-verification-form">
           <input type="date" class="age-selector">
@@ -74,7 +79,7 @@ js: may.js
           <img class="img" src="https://cdn.shopify.com/s/files/1/0284/3852/8074/files/store-sign.jpg?v=1592178175">
         </div>
       </div>
-    </article> -->
+    </article> 
     <article class="overview">
       {{ content | safe }}
     </article>
