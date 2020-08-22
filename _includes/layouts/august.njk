@@ -1,0 +1,48 @@
+---
+title: August
+description: August monthly project
+date: 2020-30-04
+js: august.js
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+  <link href="https://fonts.googleapis.com/css2?family=Sorts+Mill+Goudy:ital@0;1&family=Trirong&family=Trirong&family=Ramaraja&display=swap" rel="stylesheet"> 
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+</head>
+
+<body>
+  <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
+    <article class="project--container">
+      <form class="link-builder">
+      <label for="originalLink">Starting Link</label>
+        <input type="text" name="originalLink" id="originalLink">
+        <label for="sizes"
+        <select multiple name="sizes" id="sizes">
+          <option value="">1440x560px</option>
+          <option value="">768x300px</option>
+          <option value="">540x300px</option>
+          <option value="">1440x960px</option>
+          <option value=""></option>
+          <option value=""></option>
+        </select>
+      </form>
+    </article> 
+    <article class="overview">
+      {{ content | safe }}
+    </article>
+    </main>
+</body>
+{% if js %}
+<script type="text/javascript" src="../../js/{{js}}"></script>
+{% endif %}
+
+</html>
