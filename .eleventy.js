@@ -17,6 +17,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addLayoutAlias("project", "layouts/project.njk");
   eleventyConfig.addLayoutAlias("overviews", "layouts/project-overview.njk");
+  
+  
 
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
@@ -36,7 +38,13 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
+  eleventyConfig.addCollection("pages", function (collection) {
+    return collection.getFilteredByGlob("pages/*.njk");
+  });
+
+  eleventyConfig.addCollection("projects", function (collection) {
+    return collection.getFilteredByGlob("projects/*.njk");
+  });
 
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");

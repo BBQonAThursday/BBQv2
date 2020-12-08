@@ -1,0 +1,37 @@
+$size-scale-base: 1rem;
+
+:root {
+  --color-primary: hsla(140, 39%, 79%, 1);
+  --color-secondary: hsla(200, 35%, 33%, 1);
+  --color-tertiary: hsla(20, 49%, 71%, 1);
+  --color-black: hsla(206, 21%, 27%, 1);
+  --color-white: hsla(210, 20%, 96%, 1);
+
+
+  --base-heading: $size-scale-base;
+  --extra-small-heading: $size-scale-base * .75;
+  /* 12px */
+  --small-heading: $size-scale-base * 1.5;
+  /* 24px */
+  --medium-heading: $size-scale-base * 2.25;
+  /* 36px */
+  --large-heading: $size-scale-base * 3.375;
+  /* 54px */
+  --extra-large-heading: $size-scale-base * 5.063;
+  /* 81px */
+
+  --base-copy: $size-scale-base;
+  --small-copy: $size-scale-base * .75;
+  --large-body: $size-scale-base * 1.5;
+}
+
+$base-text-color: var(--color-black);
+$base-bg: var(--color-primary);
+
+/* Font Declarations */
+$heading-font: 'Frank Ruhl Libre',
+serif;
+$body-font: 'Inter',
+sans-serif;
+/* type scale values */
+$line-height: 1.5;

@@ -1,0 +1,45 @@
+{% if title == "Home" %}
+<header class="header header--home">
+  <div class="inner-header">
+    <!-- Logo -->
+    <div class="navbar">
+      <div class="jg-logo"><a href="/">JG</a></div>
+      <!-- Menu -->
+      <ul class="site-nav">
+      {% for page in collections.pages %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/' | url }}">{{page.data.title}}</a></li>
+      {% endfor%}
+      </ul>
+    </div>
+    <!-- Name Plate -->
+    <div class="name-plate m-4">
+      <h1 class="heading-xxl name-plate" href="#">Joel Gamble</h1>
+      <h2 class="body-lg job-plate">Front-End Developer | Designer</h2>
+    </div>
+    </ul>
+    {% include "components/social-links.njk" %}
+  </div>
+</header>
+
+{% else %}
+
+  <header class="header header--standard">
+    <!-- Logo -->
+    <img class="jg-logo" src="">
+    <div class="jg-logo">JG</div>
+    <!-- Name Plate -->
+    <div class="name-plate" href="#">Joel Gamble</div>
+    <!-- Menu -->
+    <ul class="site-nav">
+      {% for page in collections.pages %}
+        <li class="nav-item">
+          <a class="nav-link" href="{{ '/' | url }}">{{ page.data.title }}</a></li>
+      {% endfor%}
+    </ul>
+    
+    <!-- Page Heading -->
+    <h1 class="page-title" href="{{ '/' | url }}">{{ metadata.title }}</h1>
+  </header>
+  
+{% endif %}

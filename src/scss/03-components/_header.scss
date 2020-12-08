@@ -1,0 +1,57 @@
+.header {
+  background-color: $base-bg;
+  display: grid;
+  justify-content: center;
+  min-height: 30rem;
+
+
+  .inner-header {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .name-plate {
+    text-align: center;
+  }
+
+  &--standard {}
+
+  &--home {
+    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: -6rem;
+}
+
+ul.site-nav {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  .nav-item {
+    margin: .5rem;
+  }
+}
+
+.jg-logo {
+  @extend %heading-xl;
+  background-color: var(--color-black);
+  width: 6rem;
+  height: auto;
+  padding: 1rem;
+  color: var(--color-primary);
+  text-align: center;
+
+  &:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-tertiary);
+  }
+}

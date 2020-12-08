@@ -1,15 +1,58 @@
 ---
-layout: layouts/home.njk
-eleventyNavigation:
-  key: Home
-  order: 1
+title: Home
 ---
 
-<h2 class="h2">What's this all about?</h2>
-<p class="body--regular">My goal with this project is to create one new page each month based on an inspiration piece found online. Either Instagram, Dribbble, or anything else I like.</p>
-<p class="body--regular">I'm also going to try and write a little bit about each piece after the fact, but nothing is guaranteed.</p>
-<p class="body--regular">Through this, I hope to finally explore HTML,CSS and Javascript deeper. I also want to put into practice basic components such as carousels, photo galleries and animations that help build more interactive experiences.</p>
-<p class="body--regular">Rather than just building this on my person site, I'm trying something new and spinning this up on an 11ty install. This is new to me and I'm really confused. I love diving into this.</p>
-<p class="body--regular">If you happen to be reading this, I hope you enjoy it as much as I have enjoyed making this.</p>
-<p class="body--regular">Best Regards - Joel</p>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel Gamble</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"> 
+     
+  </head>
+  <body class="home--page">
+  {% include "components/header.njk"%}
+    <main class="home--body">
+      {{ content | safe }}
+      <div class="content-container">
+        <div class="featured-projects mt-32 mr-8">
+          <div class="flex justify-between">
+            <h2 class="heading-lg">Featured Projects</h2>
+            <a class="mt-8 lg:pr-16 block underline body-sm" href="#">View All</a>
+          </div>
+          <div class="projects-container">
+            {% for project in collections.project | head(4) %}
+            <div class="project py-6 px-4 mb-8 hover:bg-gray-200 hover:shadow-lg rounded-md">
+              <div class="color-block"></div>
+              <h3 class="heading-md mt-4 hover:underline">{{project.data.title}}</h3>
+              <p class="body-base mt-2">{{project.data.description}}</p>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="web-tools pt-32 px-8">
+          <h2 class="body-base">Web Tools</h2>
+          {% for project in collections.tool | head(projects,4) %}
+          <div class="project mt-6">
+            <div class="color-block mr-4"></div>
+            <div class="web-tool-container mr-4">
+              <h3 class="heading-sm border-b-2">{{project.data.title}}</h3>
+              <p class="mt-2">{{project.data.description}}</p>
+            </div>
+            <button>&rarr;</button>
+          </div>
+          {% endfor %}
+          <a class="mt-8 block underline body-sm" href="#">View All</a>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="{{ '/js/colorBlocks.js' | url }}"></script>
+  </body>
+</html>
+ 

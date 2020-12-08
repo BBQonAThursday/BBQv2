@@ -1,11 +1,16 @@
-@import "reset";
-@import "mixins";
-@import "modules/variables";
-@import "modules/typography";
-@import "base";
-@import "modules/icons";
-@import "modules/january";
-@import "modules/february";
-@import "modules/march";
-@import "modules/april";
-@import "modules/may";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "01-config/reset";
+@import "04-utilities/mixins";
+
+@import "01-config/variables";
+@import "01-config/typography";
+@import "01-config/color";
+
+@import "02-base/base";
+
+@import "03-components/header";
+@import "03-components/social-icons";
+@import "03-components/featured-home-content";

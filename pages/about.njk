@@ -1,0 +1,108 @@
+---
+title: About
+description: Hey! I'm Joel Gamble.
+tags: page
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ renderData.title or title or metadata.title }}</title>
+  <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+</head>
+
+<body>
+  <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
+    <article class="project--container">
+      <article class="february">
+        <div class="brand">
+          9Grids.
+        </div>
+        <nav class="nav">
+          <ul class="nav--list">
+            <li class="nav--list-item">Explore</li>
+            <li class="nav--list-item">About</li>
+            <li class="nav--list-item">Contact</li>
+            <li class="nav--list-item"><i class="gg-search"></i></li>
+        </nav>
+        <section class="location--carousel">
+          <div class="slide">
+            <div class="slide--title">Visit Monterey</div>
+          </div>
+          <div class="slide">
+            <div class="slide--title">Lisbon Summers</div>
+          </div>
+          <div class="slide">
+            <div class="slide--title">Japanese Spring</div>
+          </div>
+          <div class="slide">
+            <div class="slide--title">New<br> Zealand</div>
+          </div>
+           <div class="slide">
+            <div class="slide--title">Amsterdam</div>
+          </div>
+          <div class="carousel--indicators">
+            <div class="indicator--track">
+              <div class="active--indicator"></div>
+            </div>
+            <div class="carousel--controls">
+              <i class="gg-icon gg-arrow-left-o"></i>
+              <i class="gg-icon gg-arrow-right-o"></i>
+            </div>
+          </div>
+        </section>
+        <section class="location--image">
+          <img id="monterey" class="slide--image active" src="/img/february/ian-schneider-WymR2nYtj5M-unsplash.jpg">
+          <img id="lisbon" class="slide--image" src="/img/february/tom-byrom-hgFX7SydvFk-unsplash.jpg">
+          <img id="japan" class="slide--image" src="/img/february/bantersnaps-peYW3VwICpE-unsplash.jpg">
+          <img id="new-zealand" class="slide--image" src="/img/february/dan-freeman-m4-wkz4GV04-unsplash.jpg">
+          <img id="amsterdam" class="slide--image" src="/img/february/robin-benzrihem-4ZtYoQavCVI-unsplash.jpg">
+        </section>
+        
+        <article class="location--description">
+          <div class="location--content active monterey">
+            <h2 class="heading">Perfect Weekend</h2>
+            <p class="body--regular">If you're in need of a seaside getaway but don't want to dig up your passport,
+              consider venturing to the Pacific coast of Central California, USA.</p>
+              <div class="arrow">&rarr;</div>
+          </div>
+          <div class="location--content lisbon">
+            <h2 class="heading">Beautiful Weather</h2>
+            <p class="body--regular">Lisbon is, among other things, known for its amazing old city, the nice buildings with cute colourful tiles and amazing food. The city itself can definitely convince everyone who loves to travel for culture, good weather and delicious food.</p>
+            <div class="arrow">&rarr;</div>
+          </div>
+          <div class="location--content japan">
+            <h2 class="heading">Land of the Rising Sun</h2>
+            <p class="body--regular">Japan is one of the most popular travel destinations for the region. Japan maintains a strong sense of traditional and cultural history while also being a world leader in innovative technology and fashion.</p>
+              <div class="arrow">&rarr;</div>
+          </div>
+          <div class="location--content auckland">
+            <h2 class="heading">City of Sails</h2>
+            <p class="body--regular"> The centre of the city flows out and off the water, and you can walk from there all the way along a coastal walkway for hours, never leaving the water’s edge, never losing sight of the shore.</p>
+              <div class="arrow">&rarr;</div>
+          </div>
+          <div class="location--content amsterdam">
+            <h2 class="heading">Venice of the North</h2>
+            <p class="body--regular">From unconventional restaurants and local craft beers to a wealth of world-class museums, it's easy to see why Amsterdam is a top tourist destination. Its bike culture and charming canals are also all part of the city's universal appeal.</p>
+              <div class="arrow">&rarr;</div>
+          </div>
+          
+        </article>
+      </article>
+</article>
+      <article class="overview">
+        {{ content | safe }}
+      </article>
+      </main>
+  </body>
+  {% if js %}
+  <script type="text/javascript" src="../../js/{{js}}"></script>
+      {% endif %}
+</html>
