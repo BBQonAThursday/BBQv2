@@ -3,12 +3,14 @@
   <div class="inner-header">
     <!-- Logo -->
     <div class="navbar">
-      <div class="jg-logo"><a href="/">JG</a></div>
+      <div class="jg-logo"><a href="{{ '/' | url }}">JG</a></div>
       <!-- Menu -->
       <ul class="site-nav">
       {% for page in collections.pages %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ '/' | url }}">{{page.data.title}}</a></li>
+        {% if page.data.status === "active" %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ page.url | url }}">{{page.data.title}}</a></li>
+        {% endif %}
       {% endfor%}
       </ul>
     </div>
@@ -25,21 +27,23 @@
 {% else %}
 
   <header class="header header--standard">
+    <div class="inner-header">
     <!-- Logo -->
-    <img class="jg-logo" src="">
-    <div class="jg-logo">JG</div>
-    <!-- Name Plate -->
-    <div class="name-plate" href="#">Joel Gamble</div>
-    <!-- Menu -->
-    <ul class="site-nav">
-      {% for page in collections.pages %}
-        <li class="nav-item">
-          <a class="nav-link" href="{{ '/' | url }}">{{ page.data.title }}</a></li>
-      {% endfor%}
-    </ul>
-    
+      <div class="navbar">
+        <div class="jg-logo"><a href="{{ '/' | url }}">JG</a></div>
+        <!-- Name Plate -->
+        {# <div class="name-plate" href="#">Joel Gamble</div> #}
+        <!-- Menu -->
+        <ul class="site-nav">
+          {% for page in collections.pages %}
+            <li class="nav-item">
+              <a class="nav-link" href="{{ '/' | url }}">{{ page.data.title }}</a></li>
+          {% endfor%}
+        </ul>
+      </div>
+    </div>
     <!-- Page Heading -->
-    <h1 class="page-title" href="{{ '/' | url }}">{{ metadata.title }}</h1>
+    <h1 class="page-title text-center heading-xl">{{ title }}</h1>
   </header>
   
 {% endif %}

@@ -1,136 +1,52 @@
 ---
 title: Experience
-description: build out of January design project
+description: Work experience
 date: 2020-31-01
-js: january.js
+tag: pages
+layout: layouts/base.njk
+status: active
 ---
 
-<!doctype html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ renderData.title or title or metadata.title }}</title>
-  <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
-  <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
-  <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+<article class="experience max-w-5xl mx-auto my-12">
+  {# Springs Window Fashions #}
+  <div class="job-container flex flex-row mb-16">
+    <div class="job-overview w-2/5">
+      <h2 class="company">Springs Window Fashions</h2>
+      <p class="role">Web Designer</p>
+      <p class="job-dates">October 2015 - PRESENT</p>
+    </div>
+    <div class="job-description ml-8 w-3/5">
+      <p>I design, develop and maintain our 15+ brand websites that sell blinds, shades and other window treatments. I work in numerous programming environments including EpiServer, Java, and Sharepoint.</p>
+      <p>Implemented a robust marketing data flow system using Drip which connected to our CRM system and tracked user flows. Also built out a post purchase email campaign system around user product registration.</p>
+      <p>Served on the team responsible for implementing a company wide digital asset management system that centralized our documents, images and other important assets. (Widen Collective)</p>
+    </div>
+  </div>
 
-  <link href="https://fonts.googleapis.com/css?family=Sarabun:300,400,500,700,800&display=swap" rel="stylesheet">
-  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
-</head>
+  {# Freelance Work #}
+  <div class="job-container flex flex-row mb-16">
+    <div class="job-overview w-2/5">
+      <h2 class="company">Knuckleheads Web Development</h2>
+      <p class="role">Web Designer / Developer</p>
+      <p class="job-dates">March 2020 - PRESENT</p>
+    </div>
+    <div class="job-description ml-8 w-3/5">
+      <p>Built an online store within Shopify with new site branding</p>
+      <p>migrated away from Old Wordpress site to consolidate URLs</p>
+      <p>Provide IT / web consulting regarding best practices</p>
+    </div>
+  </div>
 
-<body>
-  <main{% if templateClass %} class="{{ templateClass }}" {% endif %}>
-    <article class="project--container">
-
-      <section class="design-container flying january">
-        <a href="#" class="flying--logo">Flying.</a>
-        <ul class="flying--menu">
-          <li class="flying--menu-item active">Book your flight</li>
-          <li class="flying--menu-item">Check-In online</li>
-          <li class="flying--menu-item">Flight Status</li>
-        </ul>
-
-        <section class="flying--booking-form">
-          <h1 class="booking-form--heading">Where we going?</h1>
-          <form class="flight-form">
-            <ul class="booking-form--trip-types">
-              <li class="trip-type">
-                <input type="radio" class="booking" id="roundTrip" name="tripType" checked />
-                <label for="roundTrip">Round trip</label>
-              </li>
-              <li class="trip-type">
-                <input type="radio" name="tripType" id="oneWay" class="booking" />
-                <label for="oneWay">One way</label>
-              </li>
-
-              <li></li>
-              <li class="trip-type">
-                <input type="radio" name="tripType" id="multiDes" class="booking" />
-                <label for="multiDes">Multi-Destination</label>
-              </li>
-            </ul>
-            <div class="flight-location">
-              <div class="location-from">
-                <label for="from">From</label>
-                <input class="form-pill--left" type="search" name="from" />
-              </div>
-              <div class="location-to">
-                <label for="toDest">To</label>
-                <input class="form-pill--right" type="search" name="toDest" />
-              </div>
-            </div>
-            <div class="flight-dates">
-              <div class="dates-depart">
-                <label for="from">Depart</label>
-                <input class="form-pill--left" type="date" name="departDate" />
-              </div>
-
-              <div class="dates-return">
-                <label for="from">Return</label>
-                <input type="date" name="returnDate" />
-              </div>
-              <div class="travelers">
-                <label for="travelers">Travelers</label>
-                <input class="form-pill travelers--num" type="number" name="travelers" />
-              </div>
-              <div class="flight-class">
-                <label for="class">Class</label>
-                <select class="form-pill--right" type="select" name="class" />
-                <option value="economy">Economy</option>
-                <option value="premium-economy">Premium Economy</option>
-                <option value="business">Business</option>
-                <option value="First">First</option>
-                </select>
-              </div>
-            </div>
-
-            <button class="search-flights">Search Flights</button>
-          </form>
-
-        </section>
-        <article class="flying--carousel">
-
-          <div class="slides">
-            <div class="slide">
-              <h3 class="slide-heading">International destinations from $485</h3>
-              <p class="slide-sub-heading">Round trip, limited seats</p>
-            </div>
-            <div class="slide">
-              <h3 class="slide-heading">Domestic flights as low as $57</h3>
-              <p class="slide-sub-heading">Ends February 29th</p>
-            </div>
-            <div class="slide">
-              <h3 class="slide-heading">Low Fares with all the Perks</h3>
-              <p class="slide-sub-heading">$0 no change fees</p>
-            </div>
-            <div class="slide">
-              <h3 class="slide-heading">Win a trip to Australia</h3>
-              <p class="slide-sub-heading">Registration ends 3/31/2020</p>
-            </div>
-          </div>
-          </div>
-
-          <div class="slide-indicator">
-
-          </div>
-          <div class="carousel--controls">
-            <i class="gg-icon gg-arrow-left-o"></i>
-            <i class="gg-icon gg-arrow-right-o"></i>
-          </div>
-        </article>
-        <section class="scroll-bar">
-          <i class="gg-menu"></i>
-        </section>
-      </section>
-    </article>
-    <article class="overview">
-      {{ content | safe }}
-    </article>
-    </main>
-    {% if js %}
-      <script type="text/javascript" src="../../js/{{js}}"></script>
-    {% endif %}
-  </body>
-</html>
+  {# Arnett Group #}
+  <div class="job-container flex flex-row mb-16">
+    <div class="job-overview w-2/5">
+      <h2 class="company">The Arnett Group</h2>
+      <p class="role">Web Designer</p>
+      <p class="job-dates">December 2014 - October 2015</p>
+    </div>
+    <div class="job-description ml-8 w-3/5">
+     <p>Designed and developed corporate site within Joomla CMS.</p>
+     <p>Built custom Wordpress themes for clients.</p>
+    </div>
+  </div>
+</article>

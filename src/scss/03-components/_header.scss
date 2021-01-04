@@ -2,8 +2,7 @@
   background-color: $base-bg;
   display: grid;
   justify-content: center;
-  min-height: 30rem;
-
+  grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
 
   .inner-header {
     grid-column-start: 2;
@@ -16,10 +15,16 @@
     text-align: center;
   }
 
-  &--standard {}
+  &--standard {
+    min-height: 15rem;
+
+    .page-title {
+      grid-column: 2;
+    }
+  }
 
   &--home {
-    grid-template-columns: minmax(1rem, 1fr) minmax(auto, 70ch) minmax(1rem, 1fr);
+    min-height: 30rem;
   }
 }
 
@@ -52,6 +57,5 @@ ul.site-nav {
 
   &:hover {
     background-color: var(--color-secondary);
-    color: var(--color-tertiary);
   }
 }

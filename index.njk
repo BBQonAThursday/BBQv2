@@ -21,22 +21,28 @@ title: Home
     <main class="home--body">
       {{ content | safe }}
       <div class="content-container">
-        <div class="featured-projects mt-32 mr-8">
-          <div class="flex justify-between">
+        <div class="featured-projects md:mt-16 lg:mt-32 mr-8">
+          <div class="flex flex-row items-baseline">
             <h2 class="heading-lg">Featured Projects</h2>
-            <a class="mt-8 lg:pr-16 block underline body-sm" href="#">View All</a>
+            <a class="mt-8 lg:pl-8 block underline body-sm" href="#">View All</a>
           </div>
-          <div class="projects-container">
-            {% for project in collections.project | head(4) %}
+          <div class="projects-container flex flex-row flex-wrap">
+            {% for project in collections.project | head(6) %}
+            {% if project.data.status === "active" %}
             <div class="project py-6 px-4 mb-8 hover:bg-gray-200 hover:shadow-lg rounded-md">
+            {% if project.data.img %}
+              <img class="color-block" src="{{ project.data.img }}">
+            {% else %}
               <div class="color-block"></div>
-              <h3 class="heading-md mt-4 hover:underline">{{project.data.title}}</h3>
+            {% endif %}
+              <h3 class="heading-md mt-4 hover:underline cursor-pointer"><a href="{% if project.data.externalLink %} {{project.data.externalLink}} {% else %} {{project.data.url}} {% endif %}">{{project.data.title}}</a></h3>
               <p class="body-base mt-2">{{project.data.description}}</p>
             </div>
+            {% endif %}
             {% endfor %}
           </div>
         </div>
-        <div class="web-tools pt-32 px-8">
+        {# <div class="web-tools pt-32 px-8">
           <h2 class="body-base">Web Tools</h2>
           {% for project in collections.tool | head(projects,4) %}
           <div class="project mt-6">
@@ -49,9 +55,10 @@ title: Home
           </div>
           {% endfor %}
           <a class="mt-8 block underline body-sm" href="#">View All</a>
-        </div>
-      </div>
+        </div> #}
+      </div> 
     </main>
+    {% include "components/footer.njk" %}
     <script type="text/javascript" src="{{ '/js/colorBlocks.js' | url }}"></script>
   </body>
 </html>
