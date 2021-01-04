@@ -43,8 +43,12 @@ gulp.task('js', function() {
     .pipe(gulp.dest('_site/js'));
 }); 
 
-//Watch task
+
+// Watch task
 gulp.task('watch',function() {
     gulp.watch('src/scss/**/*.scss',gulp.parallel('css'));
     gulp.watch('src/js/*.js',gulp.parallel('js'));
 });
+
+// Build Task
+gulp.task('build', gulp.parallel('css', 'js'));
