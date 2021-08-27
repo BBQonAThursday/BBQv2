@@ -52,7 +52,7 @@ gulp.task('watch',function() {
 });
 
 // Build Task
-gulp.task('build', gulp.parallel('css', 'js'));
+gulp.task('deploy', gulp.parallel('css', 'js'));
 
 
 // Default Gulp task
