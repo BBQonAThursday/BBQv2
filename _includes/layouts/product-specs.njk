@@ -15,9 +15,14 @@
    
    {% include "components/header.njk" %}
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
+    <div class="product-specs-container relative w-full bg-black h-auto max-w-7xl mx-auto border-black border-8">
+      <img class="product-image" alt="graber-4143-layered-shades-rs20-v1.tif" src="https://embed.widencdn.net/img/springswindowfashions/1402zt82bz/1280x800px/graber-4143-layered-shades-rs20-v1.jpg?crop=true&keep=c&q=80&color=ffffffff&u=fpq9bh">
+      <div class="product-spec absolute inset-1/3 bg-black border-8 w-5 h-5" id="spec-1"></div>
+      <div class="product-spec absolute inset-1/2 bg-black border-8 w-5 h-5" id="spec-2"></div>
+      <div class="product-spec absolute inset-1/4 bg-black border-8 w-5 h-5" id="spec-3"></div>
+    </div>
       {{ content | safe }}
     </main>
-   {% include "components/footer.njk" %}
-  
+     
   </body>
 </html>

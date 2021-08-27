@@ -1,15 +1,58 @@
-.bg-green {
-  background-color: var(--color-primary);
+// Text Colors
+.c-yellow-100 {
+  color: var(--c-yellow-100);
 }
 
-.bg-blue {
-  background-color: var(--color-secondary);
+.c-blue-100 {
+  color: var(--c-blue-100);
 }
 
-.bg-peach {
-  background-color: var(--color-tertiary);
+.c-orange-100 {
+  color: var(--c-orange-100);
 }
 
-.bg-black {
-  background-color: var(--color-black);
+.c-green-100 {
+  color: var(--c-green-100);
+}
+
+.c-purple-100 {
+  color: var(--c-purple-100);
+}
+
+.c-black-100 {
+  color: var(--c-black-100);
+}
+
+.c-white-100 {
+  color: var(--c-white-100);
+}
+
+
+// Backgrounds
+.bg-yellow-100 {
+  background-color: var(--c-yellow-100);
+}
+
+.bg-blue-100 {
+  background-color: var(--c-blue-100);
+}
+
+.bg-orange-100 {
+  background-color: var(--c-orange-100);
+}
+
+.bg-green-100 {
+  background-color: var(--c-green-100);
+}
+
+.bg-purple-100 {
+  background-color: var(--c-purple-100);
+}
+
+.bg-black-100 {
+  background-color: var(--c-black-100);
+}
+
+.bg-white-100 {
+  background-color: var(--c-white-100);
 }

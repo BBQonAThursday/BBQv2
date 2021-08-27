@@ -7,6 +7,21 @@ $size-scale-base: 1rem;
   --color-black: hsla(206, 21%, 27%, 1);
   --color-white: hsla(210, 20%, 96%, 1);
 
+  --color-w100: #F4F4F2;
+  --color-w85: #E8E8E8;
+  --color-b100: #495464;
+  --color-b85: #BBBFCA;
+  --color-y100: #EDC988;
+
+  --c-yellow-100: #FEE5A5;
+  --c-orange-100: #FEB784;
+  --c-blue-100: #155674;
+  --c-green-100: #45be93;
+  --c-purple-100: #544275;
+  --c-black-100: hsla(206, 21%, 27%, 1);
+  --c-white-100: hsla(210, 20%, 96%, 1);
+
+
 
   --base-heading: $size-scale-base;
   --extra-small-heading: $size-scale-base * .75;
@@ -29,9 +44,11 @@ $base-text-color: var(--color-black);
 $base-bg: var(--color-primary);
 
 /* Font Declarations */
-$heading-font: 'Frank Ruhl Libre',
-serif;
-$body-font: 'Inter',
+$heading-font: 'Roboto Condensed',
+sans-serif;
+$body-font: 'Cabin',
 sans-serif;
 /* type scale values */
 $line-height: 1.5;
+
+$yellow-100: #FEE5A5;

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "01-config/reset";
 @import "04-utilities/mixins";
 
 @import "01-config/variables";
@@ -10,9 +9,12 @@
 @import "01-config/color";
 
 @import "02-base/base";
+@import "02-base/layout";
 
 @import "03-components/header";
 @import "03-components/footer";
-@import "03-components/social-icons";
-@import "03-components/featured-home-content";
 @import "03-components/experience";
+
+@import "05-projects/graber-blinds-carousel-redesign";
+@import "05-projects/widen-link-generator";
+@import "05-projects/power-grid";

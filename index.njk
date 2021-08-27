@@ -16,50 +16,17 @@ title: Home
 <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;500;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet"> 
      
   </head>
-  <body class="home--page">
+  <body class="home--page grid bg-yellow text-blue">
   {% include "components/header.njk"%}
     <main class="home--body">
       {{ content | safe }}
-      <div class="content-container">
-        <div class="featured-projects md:mt-16 lg:mt-32 mr-8">
-          <div class="flex flex-row items-baseline">
-            <h2 class="heading-lg">Featured Projects</h2>
-            <a class="mt-8 lg:pl-8 block underline body-sm" href="#">View All</a>
-          </div>
-          <div class="projects-container flex flex-row flex-wrap">
-            {% for project in collections.project | head(6) %}
-            {% if project.data.status === "active" %}
-            <div class="project py-6 px-4 mb-8 hover:bg-gray-200 hover:shadow-lg rounded-md">
-            {% if project.data.img %}
-              <img class="color-block" src="{{ project.data.img }}">
-            {% else %}
-              <div class="color-block"></div>
-            {% endif %}
-              <h3 class="heading-md mt-4 hover:underline cursor-pointer"><a href="{% if project.data.externalLink %} {{project.data.externalLink}} {% else %} {{project.data.url}} {% endif %}">{{project.data.title}}</a></h3>
-              <p class="body-base mt-2">{{project.data.description}}</p>
-            </div>
-            {% endif %}
-            {% endfor %}
-          </div>
-        </div>
-        {# <div class="web-tools pt-32 px-8">
-          <h2 class="body-base">Web Tools</h2>
-          {% for project in collections.tool | head(projects,4) %}
-          <div class="project mt-6">
-            <div class="color-block mr-4"></div>
-            <div class="web-tool-container mr-4">
-              <h3 class="heading-sm border-b-2">{{project.data.title}}</h3>
-              <p class="mt-2">{{project.data.description}}</p>
-            </div>
-            <button>&rarr;</button>
-          </div>
-          {% endfor %}
-          <a class="mt-8 block underline body-sm" href="#">View All</a>
-        </div> #}
+      {% include "components/about.njk" %}
+      {% include "components/projects.njk" %}
+      {% include "components/experience.njk" %}
       </div> 
     </main>
-    {% include "components/footer.njk" %}
-    <script type="text/javascript" src="{{ '/js/colorBlocks.js' | url }}"></script>
+    {# {% include "components/footer.njk" %} #}
+    {# <script type="text/javascript" src="{{ '/js/colorBlocks.js' | url }}"></script> #}
   </body>
 </html>
  

@@ -3,4 +3,9 @@ html {
   font-family: $body-font;
   color: var(--color-black);
   background-color: var(--color-white);
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
 }

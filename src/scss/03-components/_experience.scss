@@ -6,7 +6,15 @@
 }
 
 .job-description {
-  p {
+
+  p,
+  li {
     margin-bottom: 1rem;
+  }
+
+  li {
+    list-style-type: disc;
+    padding-left: .5rem;
+    margin-left: 1rem;
   }
 }

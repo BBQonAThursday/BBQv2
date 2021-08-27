@@ -1,0 +1,25 @@
+<section class="site-section projects p-4 flex flex-col justify-evenly" id="projects">
+  <div class="featured-projects">
+    <div class="flex flex-row px-4 items-baseline">
+      <h2 class="heading-lg">Projects</h2>
+      {# <a class="mt-8 lg:pl-8 block underline body-sm" href="#">View All</a> #}
+    </div>
+    <div class="projects-container flex flex-row flex-wrap my-10 md:my-20">
+      {# {% for project in collections.project | head(10) % #}
+      {% for project in collections.project | reverse %}
+      
+      <div class="project py-3 md:py-6 px-4 mb-4 md:mb-8 w-100 sm:w-1/2 md:w-1/3 lg:w-1/4 {% if project.data.status !== "active" %} disabled {% endif %}">
+        {# {% if project.data.img %}
+              <img class="color-block" src="{{ project.data.img }}">
+            {% else %}
+              <div class="color-block"></div>
+            {% endif %} #}
+        <h3 class="heading-md mt-4 hover:underline cursor-pointer"><a
+            href="{% if project.data.externalLink %} {{ project.data.externalLink}} {% else %} {{project.url}} {% endif %}">{{project.data.title}}</a>
+        </h3>
+        <p class="body-base mt-2">{{project.data.description}}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

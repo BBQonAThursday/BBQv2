@@ -4,7 +4,6 @@
   font-size: $size-scale-base * 5.063;
   line-height: $line-height;
   font-weight: bold;
-  color: var(--color-black);
 }
 
 .heading-xl,
@@ -13,7 +12,6 @@
   font-size: $size-scale-base * 3.375;
   line-height: $line-height;
   font-weight: bold;
-  color: var(--color-black);
 }
 
 .heading-lg,
@@ -22,7 +20,6 @@
   font-size: $size-scale-base * 2.25;
   line-height: $line-height;
   font-weight: bold;
-  color: var(--color-black);
 }
 
 .heading-md,
@@ -31,14 +28,12 @@
   font-size: $size-scale-base * 1.5;
   line-height: $line-height;
   font-weight: bold;
-  color: var(--color-black);
 }
 
 .heading-sm,
 %heading-sm {
   font-family: $heading-font;
   line-height: $line-height;
-  color: var(--color-black);
   font-size: $size-scale-base * 1.25;
   font-weight: bold;
 }
@@ -48,7 +43,6 @@
   font-family: $heading-font;
   font-size: $size-scale-base;
   line-height: $line-height;
-  color: var(--color-black);
   font-weight: bold;
 }
 
@@ -58,7 +52,6 @@
 %body-lg {
   font-family: $body-font;
   line-height: $line-height;
-  color: var(--color-black);
   font-weight: 400;
   font-size: $size-scale-base * 1.5;
 }
@@ -68,7 +61,6 @@
   font-family: $body-font;
   font-weight: 400;
   line-height: $line-height;
-  color: var(--color-black);
   font-size: $size-scale-base;
 }
 
@@ -76,6 +68,5 @@
 %body-sm {
   font-family: $body-font;
   line-height: $line-height;
-  color: var(--color-black);
   font-size: $size-scale-base * .75;
 }
