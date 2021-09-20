@@ -5,8 +5,10 @@
   width: 100%;
   position: fixed;
   opacity: .85;
+  transition: all .3s ease;
   background-color: var(--c-yellow-100);
   background-color: lighten($yellow-100, 5%);
+  z-index: 100;
 
   &:hover {
     background-color: lighten($yellow-100, 2.5%);

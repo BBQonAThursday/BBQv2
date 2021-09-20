@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | url }}">
+    <link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+    <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet"> 
+  </head>
+  <body>
+   
+   {% include "components/header.njk" %}
+    <main class="project-page {% if templateClass %} {{ templateClass }}{% endif %}">
+      <div class="project-body mt-40">
+        
+        {{ content | safe }}
+      </div>
+    </main>
+
+    <script type="text/javascript">
+      let backBtn = document.createElement('p');
+      backBtn.classList.add('back-button');
+      backBtn.textContent = "back";
+      let h1 = document.querySelector('h1');
+      h1.parentNode.insertBefore(backBtn, h1.nextSibling);
+        
+      backBtn.addEventListener('click', function(){
+        history.back();
+      });
+    </script>     
+  </body>
+</html>

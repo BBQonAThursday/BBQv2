@@ -5,6 +5,7 @@ date: 2021-05-02
 layout: layouts/power-grid
 year: 2021
 tags: project
+status: unactive
 ---
 
 # Power Grid Game Development

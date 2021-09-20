@@ -1,0 +1,50 @@
+.project-page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.project-body {
+  max-width: 37.5rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  a,
+  .back-button {
+    border-bottom: 1px solid var(--c-blue-100);
+    color: var(--c-blue-100);
+    text-decoration: none;
+
+    &:hover {
+      border-bottom-width: 2px;
+      background-color: var(--c-yellow-100);
+    }
+  }
+
+  h1 {
+    max-width: 60rem;
+    width: 60rem;
+    position: relative;
+    left: -11.25rem;
+    color: var(--c-blue-100);
+  }
+
+  .back-button {
+    margin-bottom: 4rem;
+    display: inline-block;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+}
+
+.project-video {
+  max-width: 60rem;
+  width: 60rem;
+  position: relative;
+  left: -11.25rem;
+}
+
+.back-button {
+  cursor: pointer;
+}

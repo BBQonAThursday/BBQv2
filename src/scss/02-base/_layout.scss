@@ -7,6 +7,10 @@
   background-color: lighten($yellow-100, 5%);
 }
 
+.home--body {
+  scroll-snap-type: y mandatory;
+}
+
 .site-section {
   padding-top: 200px;
   max-width: 1200px;
@@ -14,7 +18,7 @@
   margin-right: auto;
   min-height: 100vh;
   height: max-content;
-
+  scroll-snap-align: start;
 }
 
 .about {
