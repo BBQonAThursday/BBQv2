@@ -1,28 +1,58 @@
+/* CSS HSL */
+:root {
+  /* CSS HEX */
+  --columbia-blue: #cce6f4ff;
+  --rich-black-fogra-29: #01161eff;
+  --sunray: #edb458ff;
+  --steel-blue: #427aa1ff;
+  --mauve-taupe: #805e73ff;
+  --yellow-green-crayola: #c5e99bff;
+  --isabelline: #efe9e7ff;
 
-/* CSS HEX */
+  --brand-light-blue: var(--columbia-blue);
+  --brand-blue: var(--steel-blue);
+  --brand-yellow: var(--sunray);
+  --brand-purple: var(--mauve-taupe);
+  --brand-green: var(--yellow-green-crayola);
+  --brand-white: var(--isabelline);
+  --brand-black: var(--rich-black-fogra-29);
+}
 
 /* SCSS HSL */
+$columbia-blue: hsla(201, 65%, 88%, 1);
 $rich-black-fogra-29: hsla(197, 94%, 6%, 1);
-$honeydew: hsla(149, 64%, 92%, 1);
-$coyote-brown: hsla(30, 45%, 33%, 1);
-$teal-blue: hsla(200, 34%, 42%, 1);
-$steel-blue: hsla(202, 38%, 48%, 1);
+$mauve-taupe: hsla(323, 15%, 44%, 1);
+$yellow-green-crayola: hsla(88, 64%, 76%, 1);
+$isabelline: hsla(15, 20%, 92%, 1);
+$sunray: #edb458ff;
+$steel-blue: #427aa1ff;
+
+/* Brand color mappings */
+$brand-blue: var(--brand-blue);
+$brand-black: var(--brand-black);
+$brand-green: var(--brand-green);
+$brand-purple: var(--brand-purple);
+$brand-white: var(--brand-white);
+$brand-light-blue: var(--columbia-blue);
+$brand-yellow: var(--brand-yellow);
+
+/* Utility Class Maps */
+$brandColors: ("blue" :$brand-blue, "black":$brand-black, "green":$brand-green, "purple":$brand-purple, "white":$brand-white, "light-blue": $brand-light-blue, "yellow": $brand-yellow);
+
+@each $label,
+$color in $brandColors {
+  .text-#{$label} {
+    color: $color;
+  }
+
+  .bg-#{$label} {
+    background-color: $color;
+  }
+}
 
 
-/* SCSS Gradient */
-$gradient-top: linear-gradient(0deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-right: linear-gradient(90deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-bottom: linear-gradient(180deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-left: linear-gradient(270deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-top-right: linear-gradient(45deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-bottom-right: linear-gradient(135deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-top-left: linear-gradient(225deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-bottom-left: linear-gradient(315deg, #01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-$gradient-radial: radial-gradient(#01161eff, #dff8ebff, #7a542eff, #477890ff, #4c86a8ff);
-
-
-
-// Text Colors
+// OBS Text Colors
+// TODO remove these at some point
 .c-yellow-100 {
   color: var(--c-yellow-100);
 }
@@ -52,13 +82,14 @@ $gradient-radial: radial-gradient(#01161eff, #dff8ebff, #7a542eff, #477890ff, #4
 }
 
 
+
 // Backgrounds
 .bg-yellow-100 {
   background-color: var(--c-yellow-100);
 }
 
 .bg-blue-100 {
-  background-color: var(--c-blue-100);
+  background-color: $brand-blue;
 }
 
 .bg-orange-100 {

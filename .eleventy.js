@@ -4,7 +4,43 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const fg = require('fast-glob');
 
+
+const sanDiegoImages = fg.sync(['**/img/san-diego-thanksgiving-2021/*', '!**/_site']);
+
+function getExtension(filename) {
+  var parts = filename.split('.');
+  return parts[parts.length - 1];
+}
+
+function isImage(filename) {
+  var ext = getExtension(filename);
+  switch (ext.toLowerCase()) {
+    case 'jpg':
+    case 'gif':
+    case 'bmp':
+    case 'png':
+    case 'heic':
+      //etc
+      return true;
+  }
+  return false;
+}
+
+function isVideo(filename) {
+  var ext = getExtension(filename);
+  switch (ext.toLowerCase()) {
+    case 'm4v':
+    case 'avi':
+    case 'mpg':
+    case 'mp4':
+    case 'webm':
+      // etc
+      return true;
+  }
+  return false;
+}
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -23,6 +59,10 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });
+
+  eleventyConfig.addFilter('checkFileType', fileName => {
+    return isImage(fileName);
+  })
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
   eleventyConfig.addFilter('htmlDateString', (dateObj) => {
@@ -44,6 +84,10 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addCollection("projects", function (collection) {
     return collection.getFilteredByGlob("projects/*.njk");
+  });
+
+  eleventyConfig.addCollection('sanDiegoThanksgiving', function(collection) {
+    return sanDiegoImages;
   });
 
   eleventyConfig.addPassthroughCopy("img");

@@ -46,6 +46,7 @@
     "tailwindcss": "^2.2.7"
   },
   "dependencies": {
+    "fast-glob": "^3.2.7",
     "node-sass": "^5.0.0",
     "sass": "^1.38.1"
   }

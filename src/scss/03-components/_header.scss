@@ -6,12 +6,11 @@
   position: fixed;
   opacity: .85;
   transition: all .3s ease;
-  background-color: var(--c-yellow-100);
-  background-color: lighten($yellow-100, 5%);
+  background-color: $brand-black;
   z-index: 100;
 
   &:hover {
-    background-color: lighten($yellow-100, 2.5%);
+    // background-color: lighten($brand-pu, 2.5%);
     opacity: 1;
   }
 }
@@ -29,6 +28,7 @@
   flex-direction: row;
   margin-left: auto;
   margin-right: auto;
+  color: $brand-light-blue;
 
   .nav-item {
     margin: .5rem;
@@ -54,7 +54,7 @@
   &:hover {}
 
   .offset-square {
-    background-color: var(--c-orange-100);
+    background-color: $brand-green;
     position: absolute;
     width: 3rem;
     height: 3rem;
